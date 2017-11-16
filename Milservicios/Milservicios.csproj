@@ -267,11 +267,18 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\IndexEstilo.css" />
     <Content Include="Content\EstiloLayout.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="imagenes\banner.jpg" />
+    <Content Include="imagenes\clase.png" />
+    <Content Include="imagenes\domestico.png" />
+    <Content Include="imagenes\LOGO.png" />
+    <Content Include="imagenes\perro.jpg" />
+    <Content Include="imagenes\persona.jpg" />
     <Content Include="Models\TablasSQL\TablasModelo1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TablasModelo1.edmx</DependentUpon>
@@ -350,7 +357,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="imagenes\" />
     <Folder Include="Views\Busquedas\" />
   </ItemGroup>
   <ItemGroup>

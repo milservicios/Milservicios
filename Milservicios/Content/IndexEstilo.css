@@ -1,0 +1,97 @@
+﻿
+/*RESET CSS*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+    
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th, caption {
+    font-weight: normal;
+    text-align: left;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+q:before, q:after {
+    content: '';
+}
+/*Sin visitar*/
+a:link {
+    text-decoration:none;  
+    color:#ffffff;
+}
+/*Raton encima del texto*/
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Visitado*/
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Seleccionado*/
+a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*PAGINA WEB MODIFICACIONES*/
+
+#CabeceraPrincipal {
+    background-color:#1a11eb;
+    width:100%;
+    height:45px;
+    padding-top:10px;
+   
+}
+#BarraNavegacionIzq {
+    padding: 5px 5px 5px 5px;
+    float:left;
+}
+#BotonNav {
+    display: inline;
+    margin: 15px 5px 10px 5px;
+    padding: 3px 3px 3px 3px;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;   
+    color:#ff0000;
+}
+
+#BarraNavegacionDer {
+    padding: 5px 5px 5px 5px;
+    float: right;
+}
+#BotonControlWeb {
+    list-style-type:none;
+    display: inline;
+    margin: 15px 5px 10px 5px;
+    padding: 3px 3px 3px 3px;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ff0000;
+}
