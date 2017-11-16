@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/EstiloLayout.css" />
+    <title>@ViewBag.Title - Milservicios</title>
+    <!-- @@Styles.Render("~/Content/css")
+    @@Scripts.Render("~/bundles/modernizr")-->
+
+</head>
+<body>
+    <!--  CABECERA WEB -->
+    <header id="CabeceraPrincipal">
+        <!-- <img src="~/imagenes/iconoS.png" href="http://localhost:49555/Home/Index" />-->
+        <nav id="BarraNavegacionIzq">
+            <ul>
+                <!-- <li id="BotonNav">@Html.ActionLink("Inicio", "Index", "Home")</li>-->
+                <li id="BotonNav">@Html.ActionLink("Acerca de", "About", "Home")</li>
+                <li id="BotonNav">@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                <li id="BotonNav">@Html.ActionLink("Quienes Somos", "WhoWeAre", "Home")</li>
+            </ul>
+        </nav>
+        <nav id="BarraNavegacionDer">
+            <ul>
+                <li id="BotonControlWeb">@Html.ActionLink("Registro", "Registro", "ControlWeb")</li>
+                <li id="BotonControlWeb">@Html.ActionLink("Acceder", "Acceso", "ControlWeb")</li>
+            </ul>
+        </nav>        
+    </header>
+    <!--  IMAGEN WEB 
+    <figure>
+        <figcaption>
+            <img />
+        </figcaption>
+    </figure>
+        -->
+    <!-- CONTENIDO PRINCIPAL-->
+    
+    <!-- PIE DE PAGINA-->
+    <footer>
+        @RenderBody()
+        <br />
+        <br />
+        <br />
+        <!-- <p>&copy; @DateTime.Now.Year - Milservicios S.A.</p>-->
+    </footer>
+    <!-- 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    
+                </button>
+                @@Html.ActionLink("Milservicios", "Index", "Home", new { area = "" }, new { @@class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@@Html.ActionLink("Contacto", "Contact", "Home")</li>  
+                    <li>@@Html.ActionLink("Quienes somos", "WhoWeAre", "Home")</li>
+                </ul>
+                @@Html.Partial("_LoginPartial")                
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @@RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @@DateTime.Now.Year - Milservicios S.A.</p>
+        </footer>
+    </div>
+        -->
+   <!-- 
+    @@Scripts.Render("~/bundles/jquery")
+    @@Scripts.Render("~/bundles/bootstrap")
+    @@RenderSection("scripts", required: false)
+    -->
+</body>
+</html>

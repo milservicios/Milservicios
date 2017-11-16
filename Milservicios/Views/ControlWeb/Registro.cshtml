@@ -1,0 +1,77 @@
+﻿@model Milservicios.Models.TablasSQL.USUARIO
+@{
+    ViewBag.Title = "Registro de usuarios";
+    
+        
+    var texto = " asd";
+
+}
+<h2>@ViewBag.Title</h2>
+<p>@ViewBag.Message</p>
+<br />
+
+<h4>Cree una cuenta nueva.</h4>
+<hr />
+
+<div class="form-group">
+    <div class="top-right">
+        @Html.DropDownList("ListaDesplegable",(List<SelectListItem>)ViewBag.Milista)
+    </div>
+</div>
+@using (Html.BeginForm("Registro", "ControlWeb", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    
+     @Html.AntiForgeryToken()
+    //Nombre
+    <div class=" form-group">
+       @Html.LabelFor(model => model.Nombre, new { @class = "col-md-2 control-label" })
+       <div class="col-md-10">
+           @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
+       </div>
+    </div>
+    //Apellidos
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Apellido, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Apellido, new { @class = "form-control" })
+        </div>
+    </div>
+    //Telefono
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Telefono, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control" })
+        </div>
+    </div>
+    //Email
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    //Contraseña
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Contraseña, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control" })
+        </div>
+    </div>
+    if (texto.Equals("FAMILIA"))
+    {
+        <div class=" form-group">
+            @Html.LabelFor(model => model.FAMILIA.Ciudad, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.FAMILIA.Ciudad, new { @class = "form-control" })
+            </div>
+        </div>
+    }
+    //Boton Registrarse
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-2">
+            <input type="submit" class="btn btn-default" value="Registrarse" />
+        </div>
+    </div>
+
+}
+

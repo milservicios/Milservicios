@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milservicios", "Milservicios\Milservicios.csproj", "{87C74603-0142-4934-827F-750C4C8A5B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milservicios.Tests", "Milservicios.Tests\Milservicios.Tests.csproj", "{B3A41620-595E-44A5-9C23-34F4E0B2E554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87C74603-0142-4934-827F-750C4C8A5B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C74603-0142-4934-827F-750C4C8A5B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C74603-0142-4934-827F-750C4C8A5B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C74603-0142-4934-827F-750C4C8A5B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A41620-595E-44A5-9C23-34F4E0B2E554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A41620-595E-44A5-9C23-34F4E0B2E554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A41620-595E-44A5-9C23-34F4E0B2E554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A41620-595E-44A5-9C23-34F4E0B2E554}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DC5038F-37D0-4760-B0B8-B5022742EB68}
+	EndGlobalSection
+EndGlobal

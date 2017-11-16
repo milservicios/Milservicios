@@ -1,0 +1,33 @@
+﻿@model Milservicios.Models.TablasSQL.USUARIO
+@{
+    ViewBag.Title = "Acceso";
+}
+<h2>@ViewBag.Title</h2>
+<p>@ViewBag.Message</p>
+<br />
+@using (Html.BeginForm("Acceso", "ControlWeb", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Introduce tu email y contraseña.</h4>
+    <hr />
+    //Email
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    //Contraseña
+    <div class=" form-group">
+        @Html.LabelFor(model => model.Contraseña, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control" })
+        </div>
+    </div>
+    //Boton Acceso
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-2">
+            <input type="submit" class="btn btn-default" value="Acceder" />
+        </div>
+    </div>
+}
