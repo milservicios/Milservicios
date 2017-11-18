@@ -13,20 +13,19 @@
 <body>
     <!--  CABECERA WEB -->
     <header id="CabeceraPrincipal">
-        <!-- <img src="~/imagenes/iconoS.png" href="http://localhost:49555/Home/Index" />-->
-        <nav id="BarraNavegacionIzq">
-            <ul>
-                <!-- <li id="BotonNav">@Html.ActionLink("Inicio", "Index", "Home")</li>-->
+        <a href="http://localhost:49555/Home/Index" id="logotipo"></a>
+        <nav id="BarraNavegacionIzq">            
+            <ul>                
                 <li id="BotonNav">@Html.ActionLink("Acerca de", "About", "Home")</li>
                 <li id="BotonNav">@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 <li id="BotonNav">@Html.ActionLink("Quienes Somos", "WhoWeAre", "Home")</li>
             </ul>
         </nav>
-        <nav id="BarraNavegacionDer">
-            <ul>
-                <li id="BotonControlWeb">@Html.ActionLink("Registro", "Registro", "ControlWeb")</li>
-                <li id="BotonControlWeb">@Html.ActionLink("Acceder", "Acceso", "ControlWeb")</li>
-            </ul>
+        <nav id="BarraNavegacionDer">               
+             <ul >
+                 <li id="BotonControlWeb">@Html.ActionLink("Registro", "RegistroUsuario", "ControlWeb")</li>
+                 <li id="BotonControlWeb">@Html.ActionLink("Acceder", "Acceso", "ControlWeb")</li>
+             </ul> 
         </nav>        
     </header>
     <!--  IMAGEN WEB 

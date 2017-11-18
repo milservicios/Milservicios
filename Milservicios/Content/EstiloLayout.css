@@ -44,7 +44,7 @@ a:link {
 /*Raton encima del texto*/
 a:hover {
     text-decoration: none;
-    color: #ffffff;
+    color:#ffffff;
 }
 /*Visitado*/
 a:visited {
@@ -65,10 +65,18 @@ a:active {
     padding-top:10px;
    
 }
+#logotipo {
+    float:left;
+    width:50px;
+    height:25px;
+    background:url(../imagenes/Logo.png) no-repeat center;
+    display:block;
+}
 #BarraNavegacionIzq {
     padding: 5px 5px 5px 5px;
     float:left;
-}
+
+}    
 #BotonNav {
     display: inline;
     margin: 15px 5px 10px 5px;
@@ -76,16 +84,33 @@ a:active {
     font-family: Arial;
     font-size: 15px;
     font-style: italic;
-    font-weight: bold;   
-    color:#ff0000;
+    font-weight: bold;
+    color: #ff0000;
 }
 
 #BarraNavegacionDer {
     padding: 5px 5px 5px 5px;
     float: right;
 }
+/*
+#Menu {
+    display: flex;
+    list-style: none;
+}
+#ListaDesplegable1 {
+    background: url(../imagenes/ListaDesplegable1.png) no-repeat center;
+    display: flex;
+    list-style:none;
+}
+#Submenu {
+    display: block;
+    position:absolute;
+    top:60px;
+    background:#ff0000;
+    
+}
+    */
 #BotonControlWeb {
-    list-style-type:none;
     display: inline;
     margin: 15px 5px 10px 5px;
     padding: 3px 3px 3px 3px;

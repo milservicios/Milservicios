@@ -354,6 +354,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ControlWeb\Registro.cshtml" />
     <Content Include="Views\ControlWeb\Acceso.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroUsuario.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroFamilia.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroProfesional.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroAmbos.cshtml" />
+    <Content Include="Views\Home\WhoWeAre.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
