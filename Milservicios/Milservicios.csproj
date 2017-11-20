@@ -267,48 +267,18 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\default.css" />
     <Content Include="Content\IndexEstilo.css" />
     <Content Include="Content\EstiloLayout.css" />
-    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="imagenes\creativity.png" />
-    <Content Include="imagenes\img-5.jpg" />
-    <Content Include="imagenes\img-6.jpg" />
     <Content Include="imagenes\banner.jpg" />
-    <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="imagenes\clase.png" />
-    <Content Include="imagenes\img-1.jpg" />
     <Content Include="imagenes\domestico.png" />
-    <Content Include="imagenes\facebook.png" />
-    <Content Include="imagenes\favicon.ico" />
-    <Content Include="imagenes\insta.png" />
-    <Content Include="imagenes\img-2.jpg" />
-    <Content Include="imagenes\img-3.jpg" />
-    <Content Include="imagenes\linkedin %281%29.png" />
     <Content Include="imagenes\LOGO.png" />
     <Content Include="imagenes\perro.jpg" />
     <Content Include="imagenes\persona.jpg" />
-    <Content Include="imagenes\registrarseb.png" />
-    <Content Include="imagenes\tt.png" />
-    <Content Include="imagenes\img-4.jpg" />
-    <Content Include="imagenes\yo.jpg" />
-    <Content Include="js\animate.js" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\custom.js" />
-    <Content Include="js\inview.js" />
-    <Content Include="js\isotope.js" />
-    <Content Include="js\jquery-hover-effect.js" />
-    <Content Include="js\jquery.flexslider.js" />
-    <Content Include="js\jquery.js" />
-    <Content Include="js\jquery.localScroll.js" />
-    <Content Include="js\jquery.nav.js" />
-    <Content Include="js\jquery.prettyPhoto.js" />
-    <Content Include="js\jquery.scrollTo.js" />
     <Content Include="Models\TablasSQL\TablasModelo1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TablasModelo1.edmx</DependentUpon>
@@ -384,6 +354,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ControlWeb\Registro.cshtml" />
     <Content Include="Views\ControlWeb\Acceso.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroUsuario.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroFamilia.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroProfesional.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroAmbos.cshtml" />
     <Content Include="Views\Home\WhoWeAre.cshtml" />
   </ItemGroup>
   <ItemGroup>

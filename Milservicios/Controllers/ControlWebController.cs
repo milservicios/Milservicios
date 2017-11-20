@@ -57,7 +57,84 @@ namespace Milservicios.Controllers
         [HttpPost]
         public ActionResult Registro(string nombre, string apellido, int telefono, string email, string contraseña)
         {
-            db.RegistroUsuario(nombre,apellido,telefono,email,contraseña);
+            db.RegistroFamilia(nombre,apellido,telefono,email,contraseña);
+            return View();
+        }
+        /*  ---------------- IMPORTANTE ----------------
+         * MODIFICACIÓN DE LAS VISTAS DE REGISTRO
+         * HABRÁ CUATRO VISTAS, PRINCIPAL Y SECUNDARIAS
+         * LA PRINCIPAL SOLO VALDRÁ PARA SER ENLACE DE
+         * LAS SECUNDARIAS... CUIDADO CON LOS QUE 
+         * IMPLEMENTAIS...
+         */
+         /*Registro HTTPGET*/
+        //RegistroUsuario
+        [HttpGet]
+        public ActionResult RegistroUsuario()
+        {
+            return View();
+        }
+        //Registro de Familias
+        [HttpGet]
+        public ActionResult RegistroFamilia()
+        {
+            return View();
+        }
+        //Registro de Profesionales
+        [HttpGet]
+        public ActionResult RegistroProfesional()
+        {
+            return View();
+        }
+        //Registro de Ambos
+        [HttpGet]
+        public ActionResult RegistroAmbos()
+        {
+            return View();
+        }
+        /*Registro HTTPPOST*/       
+        //Registro de Familias
+        [HttpPost]
+        public ActionResult RegistroFamilia(string nombre,
+            string apellido, 
+            int telefono,
+            string email,
+            string contraseña,
+            string ciudad)
+        {
+            db.RegistroFamilia(nombre, apellido, telefono, email, contraseña, ciudad);
+            return View();
+        }
+        //Registro de Profesionales
+        [HttpPost]
+        public ActionResult RegistroProfesional(string nombre,
+            string apellido,
+            int telefono,
+            string email, 
+            string contraseña,
+            string sexo,
+            short edad,
+            string descripcion,
+            string zona
+            )
+        {
+            db.RegistroProfesional(nombre, apellido, telefono, email, contraseña, sexo,edad, descripcion, zona);
+            return View();
+        }
+        //Registro de Ambos
+        [HttpPost]
+        public ActionResult RegistroAmbos(string nombre, 
+            string apellido, 
+            int telefono, 
+            string email, 
+            string contraseña,
+            string ciudad,
+            string sexo,
+            short edad,
+            string descripcion,
+            string zona)
+        {
+            db.RegistroAmbos(nombre, apellido, telefono, email, contraseña, ciudad, sexo, edad, descripcion, zona);
             return View();
         }
         // Retorno de la vista acceso
