@@ -1,97 +1,201 @@
 ﻿
-/*RESET CSS*/
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    font-weight: normal;
-}
-    
+.cajonera {
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td, th, caption {
-    font-weight: normal;
-    text-align: left;
-}
-
-img, fieldset {
-    border: 0;
-}
-
-ol {
-    padding-left: 1.4em;
-    list-style: decimal;
-}
-
-ul {
-    padding-left: 1.4em;
-    list-style: square;
-}
-
-q:before, q:after {
-    content: '';
-}
-/*Sin visitar*/
-a:link {
-    text-decoration:none;  
-    color:#ffffff;
-}
-/*Raton encima del texto*/
-a:hover {
-    text-decoration: none;
-    color: #ffffff;
-}
-/*Visitado*/
-a:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-/*Seleccionado*/
-a:active {
-    text-decoration: none;
-    color: #ffffff;
-}
-/*PAGINA WEB MODIFICACIONES*/
-
-#CabeceraPrincipal {
-    background-color:#1a11eb;
-    width:100%;
-    height:45px;
-    padding-top:10px;
    
-}
-#BarraNavegacionIzq {
-    padding: 5px 5px 5px 5px;
-    float:left;
-}
-#BotonNav {
-    display: inline;
-    margin: 15px 5px 10px 5px;
-    padding: 3px 3px 3px 3px;
-    font-family: Arial;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;   
-    color:#ff0000;
+    width: 1000px;
+    margin-left:150px;
+      
+
 }
 
-#BarraNavegacionDer {
-    padding: 5px 5px 5px 5px;
-    float: right;
+
+
+.boton {
+
+    width:50%;
+    height : 50%;
 }
-#BotonControlWeb {
-    list-style-type:none;
-    display: inline;
-    margin: 15px 5px 10px 5px;
-    padding: 3px 3px 3px 3px;
-    font-family: Arial;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: #ff0000;
+
+
+
+
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #eeeeee;
 }
+
+.col-md-4 {
+    
+    width: 22%;
+    height:22%;
+    border-radius: 10%;
+    margin:10px;
+    float:left;
+  }
+
+
+
+
+.imp{
+  
+   
+     
+}
+
+
+
+.jumbotron h1 {
+  line-height: 1;
+  color: inherit;
+}
+
+.jumbotron p {
+  line-height: 1.4;
+}
+
+.container .jumbotron {
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1 {
+    font-size: 63px;
+  }
+
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+

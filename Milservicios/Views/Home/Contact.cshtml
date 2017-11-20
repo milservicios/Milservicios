@@ -8,129 +8,99 @@
 
 
 
-<h3></h3>
 
 
-<div id="caja">
+<head>
+    <meta charset="utf-8">
+    <title>Pagina de contacto milservicios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/Content/bootstrap-responsive.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+    <link href="~/Content/default.css" rel="stylesheet">
+    <link rel="shortcut icon" href="~/imagenes/favicon.ico">
+ 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="well well-sm">
-                    <form class="form-horizontal" method="post">
+</head>
 
-                        <fieldset>
-
-                            <div>
-                                <div>
-                                    <h2 class="text-center cabeza">CONTACTO</h2>
-                                    <div>
-                                        Si necesita más información, no dude en ponerse en contacto con nosotros,
-                                        estaremos encantados de ayudarle en todo lo que podamos.
-                                        Puede enviarnos un mensaje utilizando el siguiente formulario de contacto:
+<body>
+    <section id="contact" class="section green">
+        <div class="container">
+            <h4>MILSERVICIOS</h4>
+            <p>
+                Para cualquier duda o sugerencia no dude en ponerse en contacto con nosotros mediante este formulario.
+            </p>
+            <div class="blankdivider30">
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="cform" id="contact-form">
+                        <div id="sendmessage">Su mensaje ha sido enviado, muchas gracias!!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="field your-name form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
                                     </div>
-
-                                    <br /><br /><br /><br />
-
-
-                                    <form class="form-horizontal" role="form" method="post" action="index.php">
-                                        <div class="form-group">
-                                            <label for="name" class="col-sm-2 control-label">Nombre*</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name" class="col-sm-2 control-label">Apellidos*</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email" class="col-sm-2 control-label">Correo electronico*</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="message" class="col-sm-2 control-label">Mensaje*</label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" rows="4" name="message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="human" name="human" placeholder="Respuesta">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-10 col-sm-offset-2">
-                                                <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-primary">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-10 col-sm-offset-2">
-                                                <! Will be used to display an alert to the user>
-                                            </div>
-                                        </div>
-                                    </form>
-
-
+                                    <div class="field your-email form-group">
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Correo electronico" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="field subject form-group">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                        <div class="validation"></div>
+                                    </div>
                                 </div>
-
-                                <div id="mapa" class="center-block">
-
-                                    <h3>Localización</h3>
-                                    <p>
-                                        <br /><b>Escuela politecnica Universidad de Alcala de Henares</b><br /><b>Campus Universitario. Ctra. Madrid-Barcelona, Km. 33,600. Alcalá de Henares (Madrid)</b><br />
-                                    </p>
-                                    <p>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d5101.491101183479!2d-3.349797610907182!3d40.511428173511085!3m2!1i1024!2i768!4f13.1!2m1!1sCtra.+Madrid-Barcelona%2C+Km.+33%2C600.+Alcal%C3%A1+de+Henares+(Madrid)!5e0!3m2!1ses!2ses!4v1510072630485"
-                                                width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </p>
-
-
-
-
+                                <div class="span6">
+                                    <div class="field message form-group">
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                                        <div class="validation"></div>
+                                    </div>
+                                    <input type="submit" value="Enviar" class="btn btn-theme pull-left">
                                 </div>
-
-
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-                        </fieldset>
-
-
-
-
-
-
-
-                    </form>
+                        </form>
+                    </div>
+                </div>
+                <!-- ./span12 -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span6 offset3">
+                    <ul class="social-networks">
+                        <li><img src="~/imagenes/facebook.png" /></li>
+                        <li><img src="~/imagenes/tt.png" /></li>
+                        <li><img src="~/imagenes/insta.png" /></li>
+                        <li><img src="~/imagenes/linkedin (1).png" /></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; MilServicios. Todos los derechos reservados.
+                     
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- ./container -->
+    </footer>
+    <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.localScroll.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/inview.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
 
 
-
-
-
-    <br />
-    <br />
-    <div class="symple-box gray none " style="text-align:left; width:100%;">
-        <p>Todos los datos facilitados a través de formularios electrónicos y / o mediante correo electrónico serán tratados con estricta confidencialidad de acuerdo con la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de carácter personal, y le informamos que tiene usted derecho de acceso al fichero, rectificación y cancelación de sus datos, pudiendo ejercitar tales derechos. Mediante el envío de los formularios existentes en estas páginas web o mediante el envío de un mensaje de correo electrónico, el remitente presta su consentimiento al tratamiento automatizado de los datos incluidos en el mismo. Los datos facilitados no serán objeto de cesión a terceros</p>
-    </div>
-
-
-</div>
+</body>
