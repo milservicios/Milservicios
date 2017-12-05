@@ -1,78 +1,71 @@
-﻿@model Milservicios.Models.TablasSQL.USUARIO
-@{
-    ViewBag.Title = "Registro de usuarios";
-}
-<h2>@ViewBag.Title</h2>
-<br />
-<h4>Cree una cuenta nueva.</h4>
-<hr />
-@using (Html.BeginForm("RegistroProfesional", "ControlWeb", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    //Nombre
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Nombre, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
-        </div>
-    </div>
-    //Apellidos
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Apellido, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Apellido, new { @class = "form-control" })
-        </div>
-    </div>
-    //Telefono
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Telefono, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control" })
-        </div>
-    </div>
-    //Email
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    //Contraseña
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Contraseña, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class=" form-group">
-        @Html.LabelFor(model => model.PROFESIONAL.Sexo, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.PROFESIONAL.Sexo, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class=" form-group">
-        @Html.LabelFor(model => model.PROFESIONAL.Edad, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.PROFESIONAL.Edad, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class=" form-group">
-        @Html.LabelFor(model => model.PROFESIONAL.Descripcion, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.PROFESIONAL.Descripcion, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class=" form-group">
-        @Html.LabelFor(model => model.PROFESIONAL.Zona, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.PROFESIONAL.Zona, new { @class = "form-control" })
-        </div>
-    </div>
-    //Boton Registrarse
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-2">
-            <input type="submit" class="btn btn-default" value="Registrarse" />
-        </div>
-    </div>
-
-}
+﻿<!DOCTYPE html>
+@using reCAPTCHA.MVC
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/RegistroProfesional.css"/>
+</head>
+<body>
+    <!-- CABECERA WEB -->
+    <header id="RP-Header">
+        <h1 id="RP-TituloH">Registro de Profesionales</h1>
+    </header>
+    <!-- Imagen de Milservicios-->
+    <!--  <figure><img src="~/imagenes/perro.jpg" /></figure>-->
+    <!-- FORMULARIO WEB-->
+    <section id="RP-CuadradoCentral">
+        <form name="RegistroProfesional" id="RP-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="RP-NombreT">Nombre</section>
+                <input type="text" name="Nombre" id="RP-NombreC" />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="RP-ApellidoT">Apellidos</section>
+                <input type="text" name="Apellido" id="RP-ApellidoC" />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="RP-TelefonoT">Telefono</section>
+                <input type="tel" name="Telefono" id="RP-TelefonoC" />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="RP-EmailT">Email</section>
+                <input type="email" name="Email" id="RP-EmailC" />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="RP-PasswordT">Contraseña</section>
+                <input type="password" name="Contraseña" id="RP-PasswordC" />
+            </section>
+            <!-- Sexta fila - Sexo -->
+            <section>
+                <section id="RP-SexoT">Sexo</section>
+                <input type="text" name="Sexo" id="RP-SexoC" />
+            </section>
+            <!-- Septima fila - Edad -->
+            <section>
+                <section id="RP-EdadT">Edad</section>
+                <input type="number" name="Edad" id="RP-EdadC" />
+            </section>
+            <!-- Octava fila - Descripcion -->
+            <section>
+                <section id="RP-DescripcionT">Descripcion</section>
+                <input type="text" name="Descripcion" id="RP-DescripcionC" />
+            </section>
+            <!-- Novena fila - Zona -->
+            <section>
+                <section id="RP-ZonaT">Zona</section>
+                <input type="text" name="Zona" id="RP-ZonaC" />
+            </section>
+            @Html.Recaptcha()
+            @Html.ValidationMessage("ReCaptcha")
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Registrar" id="RP-Boton" />
+            </section>
+        </form>
+    </section>
+</body>
+</html>

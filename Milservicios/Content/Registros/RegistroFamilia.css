@@ -1,0 +1,152 @@
+﻿
+/* VISTA REGISTRO FAMILIA
+ * Cada "id" sera registrado de la forma
+ * RF-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+body {
+    width:100%;
+    height:100%;
+}
+/*Cabecera de la vista*/
+
+#RF-Header {
+    width: 100%;
+    height: 100%;
+    background-color: #1acc44;
+}
+/*Titulo de la cabera*/
+#RF-TituloH {
+    margin: 15px 475px 15px 475px;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 900;
+    /*border: solid 2px #00ff21;*/
+}
+/*Cuadrado central de la vista*/
+#RF-CuadradoCentral {
+    margin: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
+    width: 1250px;
+    height: 750px;
+    /*border: 2px solid red;*/
+    /*background-color:#1070d1;*/
+    background: linear-gradient(#1acc44,#10ae30);
+}
+/*Formulario de la vista registro de familias*/
+#RF-Formulario {
+    width: 450px;
+    height: 500px;
+    margin: 25px 325px 25px 325px;
+    padding: 15px 15px 15px 15px;
+    /*border:solid 2px red;*/
+    background: linear-gradient(#1acc44,#1c2667);
+    background-color: white;
+}
+/*Etiquetas para el formulario*/
+/*Texto de Nombre*/
+#RF-NombreT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Nombre*/
+#RF-NombreC {
+    /*border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Apellidos*/
+#RF-ApellidoT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Apellidos*/
+#RF-ApellidoC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Telefono*/
+#RF-TelefonoT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Telefono*/
+#RF-TelefonoC {
+    /*border: solid black 2px;*/
+    width: 150px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Email*/
+#RF-EmailT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Email*/
+#RF-EmailC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Password*/
+#RF-PasswordT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Password*/
+#RF-PasswordC {
+    /* border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Ciudad*/
+#RF-CiudadT {
+    border: solid black 2px;
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+}
+/*Cuadrado de Ciudad*/
+#RF-CiudadC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Boton registro familia*/
+#RF-Boton {
+    margin: 20px 20px 20px 125px;
+    width: 100px;
+    height: 25px;
+}

@@ -13,6 +13,7 @@ namespace Milservicios.Models.BaseDatos
         MilserviciosDBEntities database = new MilserviciosDBEntities();
         bool seguir = true;
         //Registro de usuarios
+        /* VIEJO METODO
         public void RegistroFamilia(string nombre, string apellido, int telefono, string email, string contraseña)
         { 
             //Creamos una instancia de usuario
@@ -38,6 +39,7 @@ namespace Milservicios.Models.BaseDatos
             }
             
         }
+        */
         //Acceso de usuarios
         public bool AccesoUsuario(string email, string contraseña)
         {

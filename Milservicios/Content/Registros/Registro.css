@@ -1,0 +1,97 @@
+﻿
+/* VISTA REGISTRO USUARIO
+ * Cada "id" sera registrado de la forma
+ * RU-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+/*Cabecera de la vista*/
+#RU-Header {
+    color: black;
+    /*border: solid 2px #ff0000;*/
+    background-color:#0a80ce;
+    margin:20px 250px 20px 250px;
+    padding:20px 20px 20px 20px;
+    text-align:center;
+    
+}
+#RU-TituloH
+
+body {
+    width:100%;
+    height:100%;
+    background-color:white;
+}
+/*Centro de la vista*/
+#RU-CUADROCENTRAL {
+    margin:20px 30px 20px 30px;
+    padding:20px 20px 20px 20px;
+    width:1250px;
+    height:750px;
+    border:2px solid red;
+    background-color:white;  
+}
+/*Cuadrado izquierdo*/
+#RU-CuadroI {
+    border:solid 2px #ff6a00;
+    margin:15px 15px 15px 60px;
+   /* padding:10px 15px 10px 15px;   */ 
+    width:350px;
+    height:600px;    
+    background-color:green;
+    float:left;
+}
+/*Cuadrado central*/
+#RU-CuadroC {
+    border: solid 2px #00ff21;
+    margin: 15px 20px 15px 20px;
+    /*padding: 15px 15px 15px 15px;*/
+    float:left;
+    width: 350px;
+    height: 600px;
+    background-color:deepskyblue;
+}
+/*Cuadrado derecho*/
+#RU-CuadroD {
+    border: solid 2px black;
+    margin: 15px 15px 15px 15px;
+    /* padding: 10px 20px 10px 20px;*/
+    width: 350px;
+    height: 600px;
+    float: left;
+    background-color: orangered;
+}
+/*Titulo de cuadrado*/
+#RU-Subtitulo {
+    color: black;    
+    margin:10px 85px 10px 85px;
+    padding:2px 2px 2px 2px;
+    width:180px;
+    height:20px;      
+    text-align:center;
+    border: solid black 2px;
+    
+}
+/*Descripcion de cuadrado*/
+#RU-Parrafo {
+    margin: 10px 75px 25px 75px;
+    padding: 2px 2px 2px 2px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    border: solid black 2px;
+    
+}
+/*Imagen de cuadrado*/
+#RU-Icono {
+    margin: 10px 75px 10px 75px;
+    padding: 2px 2px 2px 2px;
+    width:200px;
+    height:150px; 
+    border:none;   
+    
+}
+/*Enlace a vistas*/
+#RU-Referencia{
+    margin:10px 75px 10px 75px;    
+}
+

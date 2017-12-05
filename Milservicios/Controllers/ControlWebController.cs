@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using reCAPTCHA.MVC;
 using Milservicios.Models.BaseDatos;
 using Milservicios.Models.TablasSQL;
 
@@ -53,13 +54,15 @@ namespace Milservicios.Controllers
             ViewBag.Milista = ObtenerLista();
             return View();
         }
-        // Retornno de la vista registro con un modelo  
+        // Retornno de la vista registro con un modelo
+        /*
         [HttpPost]
         public ActionResult Registro(string nombre, string apellido, int telefono, string email, string contraseña)
         {
             db.RegistroFamilia(nombre,apellido,telefono,email,contraseña);
             return View();
         }
+        */
         /*  ---------------- IMPORTANTE ----------------
          * MODIFICACIÓN DE LAS VISTAS DE REGISTRO
          * HABRÁ CUATRO VISTAS, PRINCIPAL Y SECUNDARIAS
@@ -95,6 +98,7 @@ namespace Milservicios.Controllers
         /*Registro HTTPPOST*/       
         //Registro de Familias
         [HttpPost]
+        [CaptchaValidator]
         public ActionResult RegistroFamilia(string nombre,
             string apellido, 
             int telefono,

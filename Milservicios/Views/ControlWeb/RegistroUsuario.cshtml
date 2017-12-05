@@ -1,12 +1,51 @@
-﻿
-@{
-    ViewBag.Title = "RegistroUsuario";
-}
+﻿<!DOCTYPE html>
 
-<h2>RegistroUsuario</h2>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/Registro.css" />
+</head>
+<body>
+    <!-- CABECERA WEB -->
+    <header id="RU-Header">
+        <h1 id="RU-TituloH">Registro de Usuarios</h1>        
+    </header>
+    <!-- CUERPO PRINCIPAL -->
+    <section id="RU-CUADROCENTRAL">
+        <!-- CUADRO IZQUIERDO-->
+        <section id="RU-CuadroI"> 
+            <h3 id="RU-Subtitulo">Registro Familia</h3> 
+            <img src="~/imagenes/Familia.png" id="RU-Icono" />             
+            <p id="RU-Parrafo">El registro como familia permite crear anuncios para que otras personas puedan ayudarte. Podras elegir,
+              tanto las horas como el lugar, ademas de la persona que hara el desempeño de la tarea que necesites.
+              Tambien puedes elegir anuncios ya creados por los profesionales registrados.</p>
+            <a href="http://localhost:49555/ControlWeb/RegistroFamilia" id="RU-Referencia"> <img src="~/imagenes/registrarseb.png"  width="200"; height="80";/> </a> 
+             <!--    -->
+        </section>
+        <!-- CUADRO CENTRAL-->
+        <section id="RU-CuadroC">  
+            
+            <h3 id="RU-Subtitulo">Registro Profesional</h3>
+            <img src="~/imagenes/Profesional.png" id="RU-Icono"/>                
+            <p id="RU-Parrafo">El registro como profesional permite crear anuncios propios para que un usuario familia pueda
+              eligir tus servicios, ademas tambien podras eligir aquellos anuncios creados por las familias para ofrecerles
+              un servicio deacuerdo a las exigencias de la familia.</p>
+            <a href="http://localhost:49555/ControlWeb/RegistroProfesional" id="RU-Referencia"><img src="~/imagenes/registrarseb.png" width="200"; height="80"; /></a>   
+               
+        </section>
+        <!-- CUADRO DERECHO-->
+        <section id="RU-CuadroD">            
+            <h3 id="RU-Subtitulo">Registro Ambos</h3>
+            <img src="~/imagenes/Ambos.png" id="RU-Icono"/>                
+            <p id="RU-Parrafo">El registro como "ambos" permite al usuario que se registra crear anuncios para atender tanto
+              a familias como a otros profesionales. Puede ofrecer servicios y/o necesitar un servicio.</p>
+            <a href="http://localhost:49555/ControlWeb/RegistroAmbos" id="RU-Referencia"><img src="~/imagenes/registrarseb.png" width="200"; height="80"; /></a>
+        </section>
+    </section>
+    <!-- PIE DE PAGINA -->
+    <footer>
+        
+    </footer>
+</body>
+</html>
 
-<p><a href="http://localhost:49555/ControlWeb/RegistroFamilia"></a>Registro Familia</p>
 
-<p><a href="http://localhost:49555/ControlWeb/RegistroProfesional"></a>Registro Profesional</p>
-
-<p><a href="http://localhost:49555/ControlWeb/RegistroAmbos"></a>Registro Ambos</p>
