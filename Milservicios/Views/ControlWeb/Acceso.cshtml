@@ -1,33 +1,31 @@
-﻿@model Milservicios.Models.TablasSQL.USUARIO
-@{
-    ViewBag.Title = "Acceso";
-}
-<h2>@ViewBag.Title</h2>
-<p>@ViewBag.Message</p>
-<br />
-@using (Html.BeginForm("Acceso", "ControlWeb", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>Introduce tu email y contraseña.</h4>
-    <hr />
-    //Email
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    //Contraseña
-    <div class=" form-group">
-        @Html.LabelFor(model => model.Contraseña, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control" })
-        </div>
-    </div>
-    //Boton Acceso
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-2">
-            <input type="submit" class="btn btn-default" value="Acceder" />
-        </div>
-    </div>
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/Acceso.css" />
+</head>
+<body>    
+    <!-- CABECERA PRINCIPAL -->
+    <header id="A-CabeceraT">
+        <h1 id="A-TituloCabeceraT">Acceso de usuarios</h1>
+    </header>
+    <!-- CUERPO PRINCIPAL -->
+    <section id="A-CuerpoPrincipalT">
+        <form  name="acceso" id="A-Acceso" method="post" autocomplete="on" >
+            <!-- Primera fila - Email -->
+            <section>
+                <section id="A-EmailT">Email</section>
+                <input type="email" id="A-EmailC"/>
+            </section>
+            <!-- Segunda fila - Contraseña -->
+            <section>
+                <section id="A-ContraseñaT">Contraseña</section>
+                <input type="password" id="A-ContraseñaC"/>
+            </section>
+            <!-- Tercera fila - Boton -->
+            <section style="margin:0px 0px 5px 0px">                
+                <input type="submit" value="Acceder" id="A-Boton1"/>
+            </section>
+        </form>
+    </section>
+</body>
+</html>

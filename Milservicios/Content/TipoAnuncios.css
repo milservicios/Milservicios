@@ -1,0 +1,222 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+}
+/*
+    VISTA TIPO DE ANUNCIOS
+    * Cada "id" sera registrado de la forma
+    * TP-AAAA. De forma que sera significativo
+    * para identificar cada etiqueta de esta vista 
+*/
+/*Cabecera de la vista*/
+#TP-Header {
+    margin: 20px 475px 20px 475px;
+    width: 400px;
+    height: 45px;
+    text-align: center;    
+    color: black;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+   /* border:solid 2px black; */  
+}
+/*Centro de la vista*/
+#TP-CENTRO {
+    width: 1300px;
+    height: 450px;
+    margin: 20px 30px 20px 20px;
+    padding: 20px 5px 20px 5px;
+    border: solid 2px white;
+    /*Stand color*/
+    background: linear-gradient(#e7eff2,#f7f7f7); /*#f7f7f7,#eee4e4 , #4097e1, #97e6f7 */
+    /*Google Chrome and Safari*/
+    background: -webkit-linear-gradient(#e7eff2,#f7f7f7);
+    /*Firefox*/
+    background: -moz-linear-gradient(#e7eff2,#f7f7f7);
+    /*Opera*/
+    background: -o-linear-gradient(#e7eff2,#f7f7f7);
+}
+/**/
+#TP-CUADRO1 {
+    border: solid 2px white;
+    margin: 20px 30px 20px 50px;
+    width: 250px;
+    height: 350px;
+    float: left;
+}
+/**/
+#TP-CUADRO2 {
+    border: solid 2px white;
+    margin: 20px 30px 20px 30px;
+    width: 250px;
+    height: 350px;
+    float: left;
+}
+/**/
+#TP-CUADRO3 {
+    border: solid 2px white;
+    margin: 20px 30px 20px 30px;
+    width: 250px;
+    height: 350px;
+    float: left;
+}
+/**/
+#TP-CUADRO4 {
+    border: solid 2px white;
+    margin: 20px 30px 20px 30px;
+    width: 250px;
+    height: 350px;
+    float: left;
+}
+
+/*Titulo de cuadrado*/
+#TP-Subtitulo1 {
+    /*border: inset black 2px;*/
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 10px 30px 10px 40px;
+    padding: 15px 5px 5px 5px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#TP-Subtitulo2 {
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 10px 30px 10px 40px;
+    padding: 15px 5px 5px 5px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#TP-Subtitulo3 {
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 10px 30px 10px 40px;
+    padding: 15px 5px 5px 5px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+#TP-Subtitulo4 {
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 10px 30px 10px 40px;
+    padding: 15px 5px 5px 5px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/*Descripcion de cuadrado*/
+#TP-Parrafo1 {
+     /*border: solid white 2px;*/
+    margin: 15px 70px 25px 50px;
+    padding: 2px 2px 2px 2px;
+    width: 130px;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: justify;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+
+#TP-Parrafo2 {
+    /* border: solid white 2px;*/
+    margin: 5px 70px 25px 50px;
+    padding: 2px 2px 2px 2px;
+    width: 130px;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+
+#TP-Parrafo3 {
+    /*border: solid white 2px;*/
+    margin: 20px 70px 25px 50px;
+    padding: 2px 2px 2px 2px;
+    width: 130px;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+#TP-Parrafo4 {
+    /*border: solid white 2px;*/
+    margin: 20px 70px 25px 50px;
+    padding: 2px 2px 2px 2px;
+    width: 130px;
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+/*Imagen de cuadrado*/
+#TP-Icono1 {
+    margin: 1px 20px 1px 30px;
+    width: 180px;
+    height: 120px;
+    display: inline;
+    float: left;
+}
+
+#TP-Icono2 {
+    margin: 5px 30px 10px 35px;
+    width: 180px;
+    height: 120px;
+    display: inline;
+    float: left;
+}
+
+#TP-Icono3 {
+    margin: 1px 30px 1px 35px;
+    width: 180px;
+    height: 120px;
+    display: inline;
+    float: left;
+}
+#TP-Icono4 {
+    margin: 1px 20px 1px 30px;
+    width: 180px;
+    height: 120px;
+    display: inline;
+    float: left;
+}
+/*Enlace a vistas*/
+#TP-Referencia {
+    margin: 10px 75px 20px 55px;
+    border-radius:20px;
+}

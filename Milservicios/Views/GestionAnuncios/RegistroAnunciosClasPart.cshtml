@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Anuncios/RegistroAnunciosClasPat.css" />
+    <title>Registro de anuncios clases particulares</title>
+</head>
+<body>
+    <header id="CP-Header">
+        <h1 id="CP-TituloH">Registro clases particulares</h1>
+    </header>
+
+    <!-- FORMULARIO WEB-->
+    <section id="CP-CuadradoCentral">
+        <form action="/Gestion/RegistroAnunciosClasPart" name="RegistroCLasPart" id="CP-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="CP-NombreT">Duracion</section>
+                <input type="text" name="horario" id="CP-NombreC" required />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="CP-ApellidoT">Nacionalidad</section>
+                <input type="text" name="nacionalidad" id="CP-ApellidoC" required />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="CP-TelefonoT">Tienes carnet</section>
+                <input type="checkbox" name="carnet" id="CP-TelefonoC" required />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="CP-EmailT">Sueldo</section>
+                <input type="text" name="sueldo" id="CP-EmailC" required />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="CP-EmailT">Ciudad</section>
+                <input type="text" name="zona" id="CP-EmailC" required />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="CP-PasswordT">Fumador</section>
+                <input type="checkbox" name="fumador" id="CP-PasswordC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CP-CiudadT">Asignatura</section>
+                <input type="text" name="asignatura" id="RF-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CP-CiudadT">Curso</section>
+                <input type="text" name="curso" id="RF-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CP-CiudadT">Tipo</section>
+                <input type="text" name="tipo" id="RF-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CP-CiudadT">Lugar</section>
+                <input type="text" name="lugar" id="RF-CiudadC" required />
+            </section>
+            <div class="CP-recaptcha" data-sitekey="6LdmozwUAAAAAEPkQK5ZXqaGSy6rJ7OB9JT9bBva"></div>
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Registrar" id="CP-Boton" />
+            </section>
+        </form>
+
+    </section>
+
+</body>
+</html>
+
+

@@ -11,8 +11,7 @@ body {
 
 #RA-Header {
     width: 100%;
-    height: 100%;
-    background-color: #1acc44;
+    height: 100%;    
 }
 /*Titulo de la cabera*/
 #RA-TituloH {
@@ -23,8 +22,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 30px;
-    font-weight: 900;
-    /*border: solid 2px #00ff21;*/
+    font-weight: 900;   
 }
 /*Cuadrado central de la vista*/
 #RA-CuadradoCentral {
@@ -32,9 +30,8 @@ body {
     padding: 20px 20px 20px 20px;
     width: 1250px;
     height: 800px;
-    /*border: 2px solid red;*/
-    /*background-color:#1070d1;*/
-    background: linear-gradient(#1acc44,#10ae30);
+    border: 2px solid white;
+    background: linear-gradient(#e7eff2,#f7f7f7);
 }
 /*Formulario de la vista registro de familias*/
 #RA-Formulario {
@@ -42,18 +39,19 @@ body {
     height: 650px;
     margin: 25px 325px 25px 325px;
     padding: 15px 15px 15px 15px;
-    /*border:solid 2px red;*/
-    background: linear-gradient(#1acc44,#1c2667);
-    background-color: white;
+    border: solid 2px white;
+    background: linear-gradient(#e7eff2,#f7f7f7);    
 }
 /*Etiquetas para el formulario*/
 /*Texto de Nombre*/
 #RA-NombreT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Nombre*/
 #RA-NombreC {
@@ -65,11 +63,13 @@ body {
 }
 /*Texto de Apellidos*/
 #RA-ApellidoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Apellidos*/
 #RA-ApellidoC {
@@ -81,11 +81,13 @@ body {
 }
 /*Texto de Telefono*/
 #RA-TelefonoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Telefono*/
 #RA-TelefonoC {
@@ -97,11 +99,13 @@ body {
 }
 /*Texto de Email*/
 #RA-EmailT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Email*/
 #RA-EmailC {
@@ -113,11 +117,13 @@ body {
 }
 /*Texto de Password*/
 #RA-PasswordT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Password*/
 #RA-PasswordC {
@@ -129,11 +135,13 @@ body {
 }
 /*Texto de Ciudad*/
 #RA-CiudadT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Ciudad*/
 #RA-CiudadC {
@@ -144,11 +152,13 @@ body {
 }
 /*Texto de Sexo*/
 #RA-SexoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Sexo*/
 #RA-SexoC {
@@ -160,11 +170,13 @@ body {
 }
 /*Texto de Edad*/
 #RA-EdadT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Edad*/
 #RA-EdadC {
@@ -175,11 +187,13 @@ body {
 }
 /*Texto de Descripcion*/
 #RA-DescripcionT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Descripcion*/
 #RA-DescripcionC {
@@ -190,11 +204,13 @@ body {
 }
 /*Texto de*/
 #RA-ZonaT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de*/
 #RA-ZonaC {
@@ -208,4 +224,21 @@ body {
     margin: 20px 20px 20px 125px;
     width: 100px;
     height: 25px;
+}
+#facebookboton {
+    border: solid 2px black;
+    display: inline;
+    float: right;
+    margin: 15px 40px 20px 10px;
+}
+/*Modificar perfil de ambos*/
+#RA-TituloHM {
+    margin: 15px 425px 15px 425px;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 900;
 }

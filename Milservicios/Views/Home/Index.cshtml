@@ -1,5 +1,5 @@
-﻿ @{ 
-       ViewBag.Title = "Home page";
+﻿@{
+    ViewBag.Title = "Home page";
 }
 
 
@@ -9,84 +9,80 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8" />
+    <title>Pagina de contacto milservicios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Content/IndexEstilo.css" />
+    <link href="~/Content/bootstrap-responsive.css" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet">
+
 
 
 </head>
 
 <body>
 
-    <div class="jumbotron">
-        <h1 align="center"><b>MILSERVICIOS</b></h1>
-        <h2 align="center"><b><<<<----Rapido y fiable ---->>>></b></h2>
-        
-
-    </div>
-
-    <p class="lead" align="center">Plataforma web nacida en la Universidad de Alcalá de Henares por los mejores profesionales para hacer que el cuidado de personas, mascotas y clases particulares</p>
-    <br/>
-   <!--<p align="center"><a href="http://localhost:49555/Home/Contact" class="btn btn-primary btn-lg">Conocenos más &raquo;</a></p>--> 
-
-
-    <p align="center"><a class=“boton” href=“http://localhost:49555/ControlWeb/Registro”><img src="~/imagenes/registrarseb.png" /></a></p>
-
-    <div>
+    <section id="services" class="section orange">
+        <div class="cotene">
+            <img src="~/imagenes/Milservicios1 final.jpg" />
 
 
 
-    </div>
-    <div class="imp">
+            <p>
+                Plataforma web nacida en la Universidad de Alcalá de Henares por los mejores profesionales para hacer que el cuidado de personas, mascotas y clases particulares
+                sea más facil
 
-        <div class="col-md-4" style="background-color:#ADB0B0">
-            <h2 align="center"><b>MASCOTAS</b></h2>
-            <div class="imagen" align="center"><img src="~/imagenes/perro.jpg" width="100" height="100" /></div>
-         
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+
+
+
+            <p align="center"><a class=“boton” href=“/ControlWeb/RegistroUsuario”><img src="~/imagenes/nuevocli.png" /></a></p>
+
+
+            <!-- Four columns -->
+            <div class="row">
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <img src="~/imagenes/enfermera.png" alt="" />
+                        <h2>Cuidado personas</h2>
+                        <p>
+                            Si necesitas a alguien para que cuide de tu familiar o si eres un profesional en el cuidado de personas.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="span3 animated flyIn">
+                    <div class="service-box">
+                        <img src="~/imagenes/domestico.jpg" alt="" />
+                        <h2>Servicios domesticos</h2>
+                        <p>
+                            Limpiar, planchar o cocinar  ya no es un problema.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <img src="~/imagenes/clase.png" alt="" />
+                        <h2>Clases particulares</h2>
+                        <p>
+                            No suspendas nunca más, busca tu profesor  o ofrecete como profesional docente.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3 animated-slow flyIn">
+                    <div class="service-box">
+                        <img src="~/imagenes/perro2.png" alt="" />
+                        <h2>Servicios Domestidos</h2>
+                        <p>
+                            No dejes a tu animal nunca más desatendido. Busca o registrate como profesional.
+                        </p>
+                    </div>
+                </div>
+                <br />
+
+            </div>
+
         </div>
 
-
-
-
-        <div class="col-md-4" style="background-color:#ADB0B0">
-            <h2 align="center"><b>PERSONAS</b></h2>
-            <div class="imagen" align="center"><img src="~/imagenes/persona.jpg"   width="100" height="100" /></div>
-           
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4" style="background-color:#ADB0B0">
-            <h2 align="center"><b>CLASES</b></h2>
-            <div class="imagen" align="center"><img src="~/imagenes/clase.png" width="100" height="100" /></div>
-             
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4" style="background-color:#ADB0B0">
-            <h2 align="center"><b>DOMESTICOS</b></h2>
-            <div class="imagen" align="center"><img src="~/imagenes/domestico.png" width="100" height="100" /></div>
-
-            
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-    </div>
-    <div><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-   
-
-
-    <div class="banner" align="center">
-
-
-        <img src="~/imagenes/banner.jpg" width="650" height="200" />
-    </div>
-
-
-
-
-
-
+    </section>
 
 </body>
-
-
 </html>
-

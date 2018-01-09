@@ -1,0 +1,180 @@
+﻿/* VISTA REGISTRO FAMILIA
+ * Cada "id" sera registrado de la forma
+ * RF-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+body {
+    width: 100%;
+    height: 100%;
+}
+/*Cabecera de la vista*/
+
+#CP-Header {
+    width: 100%;
+    height: 100%;
+}
+/*Titulo de la cabera*/
+#CP-TituloH {
+    /*border: solid black 2px;*/
+    margin: 15px 400px 15px 400px;
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}
+/*Cuadrado central de la vista*/
+#CP-CuadradoCentral {
+    margin: 40px 80px 80px 30px;
+    padding: 20px 20px 20px 20px;
+    width: 1250px;
+    height: 550px;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+    border: solid white 2px;
+}
+/*Formulario de la vista registro de familias*/
+#CP-Formulario {
+    width: 450px;
+    height: 500px;
+    margin: 25px 325px 25px 325px;
+    padding: 15px 15px 15px 15px;
+    border: solid 2px white;
+    background-color: #e7eff2;
+}
+/*Etiquetas para el formulario*/
+/*Texto de Nombre*/
+#CP-NombreT {
+    /*border: solid white 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Nombre*/
+#CP-NombreC {
+    /*border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Apellidos*/
+#CP-ApellidoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Apellidos*/
+#CP-ApellidoC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Telefono*/
+#CP-TelefonoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Telefono*/
+#CP-TelefonoC {
+    /*border: solid black 2px;*/
+    width: 150px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Email*/
+#CP-EmailT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Email*/
+#CP-EmailC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Password*/
+#CP-PasswordT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Password*/
+#CP-PasswordC {
+    /* border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Ciudad*/
+#CP-CiudadT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Ciudad*/
+#RF-CiudadC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Boton registro familia*/
+#CP-Boton {
+    margin: 20px 20px 20px 125px;
+    width: 100px;
+    height: 25px;
+    font-family: Calibri;
+    font-weight: 900;
+}
+
+#facebookboton {
+    border: solid 2px black;
+    display: inline;
+    float: right;
+    margin: 15px 40px 20px 10px;
+}
+/*Modificar perfil de familia*/
+#RF-TituloHM {
+    margin: 15px 400px 15px 400px;
+    padding: 10px 10px 10px 10px;
+    width: 450px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}

@@ -13,29 +13,27 @@ body {
 #RF-Header {
     width: 100%;
     height: 100%;
-    background-color: #1acc44;
+    
 }
 /*Titulo de la cabera*/
 #RF-TituloH {
-    margin: 15px 475px 15px 475px;
+    margin: 15px 450px 15px 450px;
     padding: 10px 10px 10px 10px;
-    width: 300px;
+    width: 350px;
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-size: 30px;
-    font-weight: 900;
-    /*border: solid 2px #00ff21;*/
+    font-weight: 900;    
 }
 /*Cuadrado central de la vista*/
 #RF-CuadradoCentral {
     margin: 20px 30px 20px 30px;
     padding: 20px 20px 20px 20px;
     width: 1250px;
-    height: 750px;
-    /*border: 2px solid red;*/
-    /*background-color:#1070d1;*/
-    background: linear-gradient(#1acc44,#10ae30);
+    height: 550px;    
+    background: linear-gradient(#e7eff2,#f7f7f7);
+    border:solid white 2px;
 }
 /*Formulario de la vista registro de familias*/
 #RF-Formulario {
@@ -43,18 +41,19 @@ body {
     height: 500px;
     margin: 25px 325px 25px 325px;
     padding: 15px 15px 15px 15px;
-    /*border:solid 2px red;*/
-    background: linear-gradient(#1acc44,#1c2667);
-    background-color: white;
+    border: solid 2px white;    
+    background-color:#e7eff2;
 }
 /*Etiquetas para el formulario*/
 /*Texto de Nombre*/
 #RF-NombreT {
-    border: solid black 2px;
+    /*border: solid white 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family:Calibri;
+    font-weight:900;
 }
 /*Cuadrado de Nombre*/
 #RF-NombreC {
@@ -66,11 +65,13 @@ body {
 }
 /*Texto de Apellidos*/
 #RF-ApellidoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Apellidos*/
 #RF-ApellidoC {
@@ -82,11 +83,13 @@ body {
 }
 /*Texto de Telefono*/
 #RF-TelefonoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Telefono*/
 #RF-TelefonoC {
@@ -98,11 +101,13 @@ body {
 }
 /*Texto de Email*/
 #RF-EmailT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Email*/
 #RF-EmailC {
@@ -114,11 +119,13 @@ body {
 }
 /*Texto de Password*/
 #RF-PasswordT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Password*/
 #RF-PasswordC {
@@ -130,11 +137,13 @@ body {
 }
 /*Texto de Ciudad*/
 #RF-CiudadT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Ciudad*/
 #RF-CiudadC {
@@ -149,4 +158,23 @@ body {
     margin: 20px 20px 20px 125px;
     width: 100px;
     height: 25px;
+    font-family: Calibri;
+    font-weight: 900;    
+}
+#facebookboton {    
+    border: solid 2px black;
+    display:inline;
+    float:right;
+    margin:15px 40px 20px 10px;
+}
+/*Modificar perfil de familia*/
+#RF-TituloHM {
+    margin: 15px 400px 15px 400px;
+    padding: 10px 10px 10px 10px;
+    width: 450px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
 }

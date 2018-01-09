@@ -1,0 +1,92 @@
+﻿
+/* VISTA ACCESO
+ * Cada "id" sera registrado de la forma
+ * A-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+/*Body*/
+body {
+
+
+}
+/*Cabecera*/
+#A-CabeceraT {
+    
+    width: 500px;
+    height: 80px;
+    margin: 30px 375px 30px 375px;
+    padding: 0px 0px 0px 0px;
+}
+/*Titulo principal*/
+#A-TituloCabeceraT {
+    width: 300px;
+    height: 35px;
+    margin: 15px 100px 20px 100px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+/*Cuerpo principal*/
+#A-CuerpoPrincipalT {
+    width: 500px;
+    height: 250px;
+    margin: 20px 375px 140px 375px;
+    
+}
+/*Formulario*/
+#A-Acceso {
+    border: solid 2px white;
+    width: 350px;
+    height: 150px;
+    margin: 35px 55px 15px 55px;
+    padding: 15px 15px 5px 15px;
+    background-color: #c6d8e9;
+}
+/*Texto de Email*/
+#A-EmailT {
+    /*border: solid 2px black;*/
+    width: 50px;
+    height: 20px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadro de Email*/
+#A-EmailC {
+    width:200px;
+    height:20px;
+    margin-left:25px;
+    margin-bottom:25px;
+    
+
+}
+/*Texto de Contraseña*/
+#A-ContraseñaT {
+    /*border: solid 2px black;*/
+    width: 80px;
+    height: 20px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadro de Contraseña*/
+#A-ContraseñaC {
+    width: 160px;
+    height: 20px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+/*Boton acceso*/
+#A-Boton1 {
+    margin: 10px 20px 20px 125px;
+    width: 100px;
+    height: 25px;
+    font-family: Calibri;
+    font-weight: 900;
+}

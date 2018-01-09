@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Anuncios/RegistroAnunciosCuidadoMasc.css" />
+    <title>Registro de anuncios clases particulares</title>
+</head>
+<body>
+    <header id="CM-Header">
+        <h1 id="CM-TituloH">Resgistro de anuncios de cuidado de mascotas</h1>
+    </header>
+
+    <!-- FORMULARIO WEB-->
+    <section id="CM-CuadradoCentral">
+        <form action="/GestionAnucios/RegistroAnunciosCuidadoMasc" name="RegistroCuidadoMasc" id="CM-Formulario" method="post" autocomplete="off">
+
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="CM-NombreT">Horario</section>
+                <input type="text" name="horario" id="CM-NombreC" required />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="CM-ApellidoT">Tienes carnet</section>
+                <input type="text" name="nacionalidad" id="CM-ApellidoC" required />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="CM-TelefonoT">Sueldo</section>
+                <input type="checkbox" name="sueldo" id="CM-TelefonoC" required />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="CM-EmailT">Ciudad</section>
+                <input type="text" name="zona" id="CM-EmailC" required />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="CM-PasswordT">Fumador</section>
+                <input type="checkbox" name="fumador" id="CM-PasswordC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CM-CiudadT">Tipo de animal</section>
+                <input type="text" name="animal" id="CM-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CM-CiudadT">Numero de animales</section>
+                <input type="number" name="numero" id="CM-CiudadC" required />
+            </section>
+
+            <input type="submit" value="Registrar" id="CP-Boton" />
+
+        </form>
+    </section>
+
+</body>
+</html>
+

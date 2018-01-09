@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/RegistroAmbos.css" />
+</head>
+<body>
+    <!-- CABECERA WEB -->
+    <header id="RA-Header">
+        <h1 id="RA-TituloHM">Modificar perfil de ambos</h1>
+    </header>
+    <!-- FORMULARIO WEB-->
+    <section id="RA-CuadradoCentral">
+        <form action="/ControlWeb/RegistroAmbos" name="RegistroAmbos" id="RA-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="RA-NombreT">Nombre</section>
+                <input type="text" name="nombre" id="RA-NombreC"  />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="RA-ApellidoT">Apellidos</section>
+                <input type="text" name="apellido" id="RA-ApellidoC"  />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="RA-TelefonoT">Telefono</section>
+                <input type="tel" name="telefono" id="RA-TelefonoC"  />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="RA-EmailT">Email</section>
+                <input type="email" name="email" id="RA-EmailC"  />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="RA-PasswordT">Contraseña</section>
+                <input type="password" name="contraseña" id="RA-PasswordC"  />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="RA-CiudadT">Ciudad</section>
+                <input type="text" name="ciudad" id="RA-CiudadC"  />
+            </section>
+            <!-- Septima fila - Sexo -->
+            <section>
+                <section id="RA-SexoT">Sexo</section>
+                <input type="text" name="sexo" id="RA-SexoC"  />
+            </section>
+            <!-- Octava fila - Edad -->
+            <section>
+                <section id="RA-EdadT">Edad</section>
+                <input type="number" name="edad" id="RA-EdadC" min="1" max="150"  />
+            </section>
+            <!-- Novena fila - Descripcion -->
+            <section>
+                <section id="RA-DescripcionT">Descripcion</section>
+                <input type="text" name="descripcion" id="RA-DescripcionC"  />
+            </section>
+            <!-- Decima fila - Zona -->
+            <section>
+                <section id="RA-ZonaT">Zona</section>
+                <input type="text" name="zona" id="RA-ZonaC"  />
+            </section>
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Aceptar" id="RA-Boton" />
+            </section>
+        </form>
+    </section>
+</body>
+</html>
+
+

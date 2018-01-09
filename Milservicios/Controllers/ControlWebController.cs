@@ -48,12 +48,12 @@ namespace Milservicios.Controllers
             return View();
         }
         // Retorno de la vista registro  
-        [HttpGet]
+       /* [HttpGet]
         public ActionResult Registro()
         {
             ViewBag.Milista = ObtenerLista();
             return View();
-        }
+        }*/
         // Retornno de la vista registro con un modelo
         /*
         [HttpPost]
@@ -153,7 +153,10 @@ namespace Milservicios.Controllers
         public ActionResult Acceso(string email, string contraseña)
         {
             return View();
-        }
+        }        
+     
+
+
 
     }
 }

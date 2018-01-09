@@ -1,76 +1,138 @@
 ﻿<!DOCTYPE html>
-@using reCAPTCHA.MVC
+
 <html>
 <head>
     <link rel="stylesheet" href="~/Content/Registros/RegistroAmbos.css" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!-- CABECERA WEB -->
     <header id="RA-Header">
         <h1 id="RA-TituloH">Registro de Ambos</h1>
     </header>
-    <!-- Imagen de Milservicios-->
-    <!--  <figure><img src="~/imagenes/perro.jpg" /></figure>-->
+    <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1534593046636395',
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.11'
+                });
+
+                FB.AppEvents.logPageView();
+                FB.getLoginStatus(function (response) {
+                    statusChangeCallback(response);
+                });
+                function checkLoginState() {
+                    FB.getLoginStatus(function (response) {
+                        statusChangeCallback(response);
+                    });
+                }
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();" id="facebookboton">
+    </fb:login-button>    
     <!-- FORMULARIO WEB-->
     <section id="RA-CuadradoCentral">
-        <form name="RegistroAmbos" id="RA-Formulario" method="post" autocomplete="off">
+        <form action="/ControlWeb/RegistroAmbos" name="RegistroAmbos" id="RA-Formulario" method="post" autocomplete="off">
             <!-- Primera fila - Nombre -->
             <section>
                 <section id="RA-NombreT">Nombre</section>
-                <input type="text" name="Nombre" id="RA-NombreC" />
+                <input type="text" name="nombre" id="RA-NombreC" required />
             </section>
             <!-- Segunda fila - Apellidos -->
             <section>
                 <section id="RA-ApellidoT">Apellidos</section>
-                <input type="text" name="Apellido" id="RA-ApellidoC" />
+                <input type="text" name="apellido" id="RA-ApellidoC" required />
             </section>
             <!-- Tercera fila - Telefono -->
             <section>
                 <section id="RA-TelefonoT">Telefono</section>
-                <input type="tel" name="Telefono" id="RA-TelefonoC" />
+                <input type="tel" name="telefono" id="RA-TelefonoC" required />
             </section>
             <!-- Cuarta fila - Email -->
             <section>
                 <section id="RA-EmailT">Email</section>
-                <input type="email" name="Email" id="RA-EmailC" />
+                <input type="email" name="email" id="RA-EmailC" required />
             </section>
             <!-- Quinta fila - Contraseña -->
             <section>
                 <section id="RA-PasswordT">Contraseña</section>
-                <input type="password" name="Contraseña" id="RA-PasswordC" />
+                <input type="password" name="contraseña" id="RA-PasswordC" required />
             </section>
             <!-- Sexta fila - Ciudad -->
             <section>
                 <section id="RA-CiudadT">Ciudad</section>
-                <input type="text" name="Zona" id="RA-CiudadC" />
+                <input type="text" name="ciudad" id="RA-CiudadC" required />
             </section>
             <!-- Septima fila - Sexo -->
             <section>
                 <section id="RA-SexoT">Sexo</section>
-                <input type="text" name="Sexo" id="RA-SexoC" />
+                <input type="text" name="sexo" id="RA-SexoC" required />
             </section>
             <!-- Octava fila - Edad -->
             <section>
                 <section id="RA-EdadT">Edad</section>
-                <input type="number" name="Edad" id="RA-EdadC" />
+                <input type="number" name="edad" id="RA-EdadC" min="1" max="150" required />
             </section>
             <!-- Novena fila - Descripcion -->
             <section>
                 <section id="RA-DescripcionT">Descripcion</section>
-                <input type="text" name="Descripcion" id="RA-DescripcionC" />
+                <input type="text" name="descripcion" id="RA-DescripcionC" required />
             </section>
             <!-- Decima fila - Zona -->
             <section>
                 <section id="RA-ZonaT">Zona</section>
-                <input type="text" name="Zona" id="RA-ZonaC" />
+                <input type="text" name="zona" id="RA-ZonaC" required />
             </section>
-            @Html.Recaptcha()
-            @Html.ValidationMessage("ReCaptcha")
+            
             <!-- Boton de registro -->
             <section>
                 <input type="submit" value="Registrar" id="RA-Boton" />
             </section>
         </form>
     </section>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1534593046636395',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+
+    FB.AppEvents.logPageView();
+    FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+     
+    </script>
+    <fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();" id=" facebookboton">
+    </fb:login-button>
 </body>
 </html>

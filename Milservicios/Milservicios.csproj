@@ -210,8 +210,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ControlWebController.cs" />
+    <Compile Include="Controllers\GestionAnunciosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -274,14 +276,20 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Anuncios\RegistroAnunciosClasPat.css" />
+    <Content Include="Content\Anuncios\RegistroAnunciosCuidadoMasc.css" />
+    <Content Include="Content\Anuncios\RegistroAnunciosCuidadoPers.css" />
+    <Content Include="Content\Anuncios\RegistroAnunciosLaboresDom.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\IndexEstilo.css" />
     <Content Include="Content\EstiloLayout.css" />
+    <Content Include="Content\Registros\Acceso.css" />
     <Content Include="Content\Registros\Registro.css" />
     <Content Include="Content\Registros\RegistroAmbos.css" />
     <Content Include="Content\Registros\RegistroFamilia.css" />
     <Content Include="Content\Registros\RegistroProfesional.css" />
+    <Content Include="Content\TipoAnuncios.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -318,18 +326,25 @@
     </Content>
     <None Include="Properties\PublishProfiles\MilserviciosSoftware - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Registros\registrofamilia.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\googlea5c7e8bb1775503d.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -366,13 +381,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\ControlWeb\Registro.cshtml" />
     <Content Include="Views\ControlWeb\Acceso.cshtml" />
     <Content Include="Views\ControlWeb\RegistroUsuario.cshtml" />
     <Content Include="Views\ControlWeb\RegistroFamilia.cshtml" />
     <Content Include="Views\ControlWeb\RegistroProfesional.cshtml" />
     <Content Include="Views\ControlWeb\RegistroAmbos.cshtml" />
     <Content Include="Views\Home\WhoWeAre.cshtml" />
+    <Content Include="Views\ControlWeb\RegistroAnuncios.cshtml" />
+    <Content Include="Views\Perfil\PerfilFamilia.cshtml" />
+    <Content Include="Views\Perfil\PerfilProfesional.cshtml" />
+    <Content Include="Views\Perfil\PerfilAmbos.cshtml" />
+    <Content Include="Views\GestionAnuncios\RegistroAnunciosClasPart.cshtml" />
+    <Content Include="Views\GestionAnuncios\RegistroAnunciosCuidadoMasc.cshtml" />
+    <Content Include="Views\GestionAnuncios\RegistroAnunciosCuidadoPers.cshtml" />
+    <Content Include="Views\GestionAnuncios\RegistroAnunciosLaboresDom.cshtml" />
+    <Content Include="Views\GestionAnuncios\TipoAnuncios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -386,7 +409,6 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

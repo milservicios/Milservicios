@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Anuncios/RegistroAnunciosCuidadoPers.css" />
+    <title>Registro de anuncios clases particulares</title>
+</head>
+<body>
+    <header id="CPE-Header">
+        <h1 id="CPE-TituloH">Registro clases particulares</h1>
+    </header>
+
+    <!-- FORMULARIO WEB-->
+    <section id="CPE-CuadradoCentral">
+        <form action="/Gestion/RegistroAnunciosCuidadoPers" name="RegistroCuidadoPers" id="CPE-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="CPE-NombreT">Horario</section>
+                <input type="text" name="horario" id="CPE-NombreC" required />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="CPE-ApellidoT">Tienes carnet</section>
+                <input type="text" name="nacionalidad" id="CPE-ApellidoC" required />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="CPE-TelefonoT">Sueldo</section>
+                <input type="checkbox" name="sueldo" id="CPE-TelefonoC" required />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="CPE-EmailT">Ciudad</section>
+                <input type="text" name="zona" id="CPE-EmailC" required />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="CPE-PasswordT">Fumador</section>
+                <input type="checkbox" name="fumador" id="CPE-PasswordC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CPE-CiudadT">Edad</section>
+                <input type="number" name="edad" id="CPE-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CPE-CiudadT">numero</section>
+                <input type="number" name="numero" id="CPE-CiudadC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="CP-CiudadT">Tipo</section>
+                <input type="text" name="tipo" id="RF-CiudadC" required />
+            </section>
+
+            <div class="CP-recaptcha" data-sitekey="6LdmozwUAAAAAEPkQK5ZXqaGSy6rJ7OB9JT9bBva"></div>
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Registrar" id="CP-Boton" />
+            </section>
+        </form>
+
+    </section>
+
+</body>
+</html>

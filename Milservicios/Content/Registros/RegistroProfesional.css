@@ -12,8 +12,7 @@ body {
 
 #RP-Header {
     width: 100%;
-    height: 100%;
-    background-color: #1acc44;
+    height: 100%;    
 }
 /*Titulo de la cabera*/
 #RP-TituloH {
@@ -22,10 +21,9 @@ body {
     width: 500px;
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    font-style: normal;
     font-size: 30px;
-    font-weight: 900;
-    /*border: solid 2px #00ff21;*/
+    font-weight: 900;    
 }
 /*Cuadrado central de la vista*/
 #RP-CuadradoCentral {
@@ -33,9 +31,8 @@ body {
     padding: 20px 20px 20px 20px;
     width: 1250px;
     height: 800px;
-    /*border: 2px solid red;*/
-    /*background-color:#1070d1;*/
-    background: linear-gradient(#1acc44,#10ae30);
+    border: solid white 2px;
+    background: linear-gradient(#e7eff2,#f7f7f7);
 }
 /*Formulario de la vista registro de familias*/
 #RP-Formulario {
@@ -43,18 +40,20 @@ body {
     height: 700px;
     margin: 25px 325px 25px 325px;
     padding: 15px 15px 15px 15px;
-    /*border:solid 2px red;*/
-    background: linear-gradient(#1acc44,#1c2667);
-    background-color: white;
+    border:solid 2px white;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+    
 }
 /*Etiquetas para el formulario*/
 /*Texto de Nombre*/
 #RP-NombreT {
-    border: solid black 2px;
+   /* border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Nombre*/
 #RP-NombreC {
@@ -66,11 +65,13 @@ body {
 }
 /*Texto de Apellidos*/
 #RP-ApellidoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Apellidos*/
 #RP-ApellidoC {
@@ -82,11 +83,13 @@ body {
 }
 /*Texto de Telefono*/
 #RP-TelefonoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Telefono*/
 #RP-TelefonoC {
@@ -94,15 +97,17 @@ body {
     width: 150px;
     height: 25px;
     margin-left: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 25px;    
 }
 /*Texto de Email*/
 #RP-EmailT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Email*/
 #RP-EmailC {
@@ -114,11 +119,13 @@ body {
 }
 /*Texto de Password*/
 #RP-PasswordT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Password*/
 #RP-PasswordC {
@@ -130,11 +137,13 @@ body {
 }
 /*Texto de Sexo*/
 #RP-SexoT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Sexo*/
 #RP-SexoC {
@@ -146,11 +155,13 @@ body {
 }
 /*Texto de Edad*/
 #RP-EdadT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Edad*/
 #RP-EdadC {
@@ -161,11 +172,13 @@ body {
 }
 /*Texto de Descripcion*/
 #RP-DescripcionT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de Descripcion*/
 #RP-DescripcionC {
@@ -176,11 +189,13 @@ body {
 }
 /*Texto de*/
 #RP-ZonaT {
-    border: solid black 2px;
+    /*border: solid black 2px;*/
     width: 85px;
     height: 25px;
     text-align: left;
     float: left;
+    font-family: Calibri;
+    font-weight: 900;
 }
 /*Cuadrado de*/
 #RP-ZonaC {
@@ -194,4 +209,24 @@ body {
     margin: 20px 20px 20px 125px;
     width: 100px;
     height: 25px;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+#facebookboton {
+    border: solid 2px black;
+    display: inline;
+    float: right;
+    margin: 15px 40px 20px 10px;
+}
+/*Modificacion perfil profesional*/
+#RP-TituloHM {
+    margin: 15px 375px 15px 375px;
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
 }

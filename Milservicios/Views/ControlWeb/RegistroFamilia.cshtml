@@ -1,58 +1,86 @@
 ﻿<!DOCTYPE html>
-@using reCAPTCHA.MVC
-@using Facebook
 <html>
 <head>
     <link rel="stylesheet" href="~/Content/Registros/RegistroFamilia.css" />
-    <!--<script type="text/javascript" src="~/Scripts/Registros/registrofamilia.js"></script>-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!-- CABECERA WEB -->
     <header id="RF-Header">
         <h1 id="RF-TituloH">Registro de Familias</h1>
-    </header>
-    <!-- Imagen de Milservicios-->
-   <!--  <figure><img src="~/imagenes/perro.jpg" /></figure>-->
+    </header>   
+    <script>
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        appId: '1534593046636395',
+                        cookie: true,
+                        xfbml: true,
+                        version: 'v2.11'
+                    });
+
+                    FB.AppEvents.logPageView();
+                    FB.getLoginStatus(function (response) {
+                        statusChangeCallback(response);
+                    });
+                    function checkLoginState() {
+                        FB.getLoginStatus(function (response) {
+                            statusChangeCallback(response);
+                        });
+                    }
+                };
+
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) { return; }
+                    js = d.createElement(s); js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();" id="facebookboton">
+    </fb:login-button>
     <!-- FORMULARIO WEB-->
     <section id="RF-CuadradoCentral">
-        <form name="RegistroFamilia" id="RF-Formulario" method="post" autocomplete="off">            
+        <form action="/ControlWeb/RegistroFamilia" name="RegistroFamilia" id="RF-Formulario" method="post" autocomplete="off">            
             <!-- Primera fila - Nombre --> 
             <section>
                 <section id="RF-NombreT">Nombre</section>
-                <input type="text" name="Nombre" id="RF-NombreC" />
+                <input type="text" name="nombre" id="RF-NombreC" required />
             </section>
             <!-- Segunda fila - Apellidos -->
             <section>
                 <section id="RF-ApellidoT">Apellidos</section>
-                <input type="text" name="Apellido" id="RF-ApellidoC" />
+                <input type="text" name="apellido" id="RF-ApellidoC" required />
             </section>
             <!-- Tercera fila - Telefono -->
             <section>
                 <section id="RF-TelefonoT">Telefono</section>
-                <input type="tel" name="Telefono" id="RF-TelefonoC" />
+                <input type="tel" name="telefono" id="RF-TelefonoC" required />
             </section>
             <!-- Cuarta fila - Email -->
             <section>
                 <section id="RF-EmailT">Email</section>
-                <input type="email" name="Email" id="RF-EmailC" />
+                <input type="email" name="email" id="RF-EmailC" required />
             </section>
             <!-- Quinta fila - Contraseña -->
             <section>
                 <section id="RF-PasswordT">Contraseña</section>
-                <input type="password" name="Contraseña" id="RF-PasswordC" />
+                <input type="password" name="contraseña" id="RF-PasswordC" required />
             </section>
             <!-- Sexta fila - Ciudad -->
             <section>
                 <section id="RF-CiudadT">Ciudad</section>
-                <input type="text" name="Ciudad" id="RF-CiudadC" />
+                <input type="text" name="ciudad" id="RF-CiudadC" required />
             </section>
-            @Html.Recaptcha()
-            @Html.ValidationMessage("ReCaptcha")           
+    <!--         <div class="g-recaptcha" data-sitekey="6LdmozwUAAAAAEPkQK5ZXqaGSy6rJ7OB9JT9bBva"></div>   -->       
             <!-- Boton de registro -->
             <section>
                 <input type="submit" value="Registrar" id="RF-Boton" />
             </section>           
         </form>
+
     </section>
 </body>
 </html>

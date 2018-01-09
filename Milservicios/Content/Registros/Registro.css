@@ -6,92 +6,183 @@
 */
 /*Cabecera de la vista*/
 #RU-Header {
-    color: black;
-    /*border: solid 2px #ff0000;*/
-    background-color:#0a80ce;
-    margin:20px 250px 20px 250px;
-    padding:20px 20px 20px 20px;
-    text-align:center;
-    
+    width: 200px;
+    height: 30px;
+    margin: 20px 475px 20px 475px;
+    background: url(../../imagenes/registrousuario1.png);
+    width: 350px;
+    height: 45px;
+    /*border:solid 2px black;*/
+    /*padding: 20px 20px 20px 20px;*/
+    /*color: black;*/
+    /*background-color: #0a80ce;*/
+    /*border-radius:25px;*/
+    /*text-align: center;*/
 }
-#RU-TituloH
+
+#RU-TituloH{
+    background:url(../../imagenes/registrousuario1.png);
+    width:350px;
+    height:45px;
+}
 
 body {
     width:100%;
-    height:100%;
-    background-color:white;
+    height:100%;    
 }
 /*Centro de la vista*/
 #RU-CUADROCENTRAL {
-    margin:20px 30px 20px 30px;
-    padding:20px 20px 20px 20px;
-    width:1250px;
-    height:750px;
-    border:2px solid red;
-    background-color:white;  
+    margin: 20px 30px 20px 30px;
+    padding: 20px 5px 20px 5px;
+    width: 1250px;
+    height: 550px;
+    /*border:2px solid black;*/
+    /*Stand color*/
+    background: linear-gradient(#e7eff2,#f7f7f7); /*#f7f7f7,#eee4e4 , #4097e1, #97e6f7 */
+    /*Google Chrome and Safari*/
+    background: -webkit-linear-gradient(#e7eff2,#f7f7f7);
+    /*Firefox*/
+    background: -moz-linear-gradient(#e7eff2,#f7f7f7);
+    /*Opera*/
+    background: -o-linear-gradient(#e7eff2,#f7f7f7);
 }
 /*Cuadrado izquierdo*/
 #RU-CuadroI {
-    border:solid 2px #ff6a00;
-    margin:15px 15px 15px 60px;
-   /* padding:10px 15px 10px 15px;   */ 
-    width:350px;
-    height:600px;    
-    background-color:green;
+    border:solid 2px white;
+    margin:20px 0px 15px 80px;
+    width:300px;
+    height:370px;
     float:left;
+    /*background-color:#e7eff2;*/
 }
 /*Cuadrado central*/
 #RU-CuadroC {
-    border: solid 2px #00ff21;
-    margin: 15px 20px 15px 20px;
-    /*padding: 15px 15px 15px 15px;*/
+    border:solid 2px white;
+    margin:20px 0px 15px 80px;
+    width:310px;
+    height:370px;
     float:left;
-    width: 350px;
-    height: 600px;
-    background-color:deepskyblue;
+    /*background-color:deepskyblue;*/
 }
 /*Cuadrado derecho*/
 #RU-CuadroD {
-    border: solid 2px black;
-    margin: 15px 15px 15px 15px;
-    /* padding: 10px 20px 10px 20px;*/
-    width: 350px;
-    height: 600px;
-    float: left;
-    background-color: orangered;
+    border:solid 2px white;
+    margin:20px 0px 15px 80px;    
+    width:320px;
+    height:370px;
+    float:left;
+    /*background-color: orangered;*/
 }
 /*Titulo de cuadrado*/
-#RU-Subtitulo {
-    color: black;    
-    margin:10px 85px 10px 85px;
-    padding:2px 2px 2px 2px;
-    width:180px;
-    height:20px;      
-    text-align:center;
-    border: solid black 2px;
-    
+#RU-Subtitulo1 {
+    /*border: inset black 2px;*/
+    border-radius:5px;
+    background-color:#c1d8eb;
+    margin: 20px 10px 10px 5px;
+    padding: 15px 5px 5px 5px;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+#RU-Subtitulo2 {
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 20px 5px 10px 5px;
+    padding: 15px 5px 5px 5px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+#RU-Subtitulo3 {
+    border-radius: 5px;
+    background-color: #c1d8eb;
+    margin: 20px 7px 10px 5px;
+    padding: 15px 5px 5px 5px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display: inline;
+    float: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 /*Descripcion de cuadrado*/
-#RU-Parrafo {
-    margin: 10px 75px 25px 75px;
+#RU-Parrafo1 {
+   /* border: solid white 2px;*/
+    margin: 15px 20px 25px 18px;
     padding: 2px 2px 2px 2px;
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 170px;
     display: block;
-    border: solid black 2px;
-    
+    float: left;
+    text-align:start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+#RU-Parrafo2 {
+   /* border: solid white 2px;*/
+    margin: 5px 20px 25px 18px;
+    padding: 2px 2px 2px 2px;
+    width: 260px;
+    height: 165px;
+    display: block;
+    float: left;
+    text-align: start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
+}
+#RU-Parrafo3 {
+    /*border: solid white 2px;*/
+    margin: 20px 20px 25px 18px;
+    padding: 2px 2px 2px 2px;
+    width: 260px;
+    height: 165px;
+    display: block;
+    float: left;
+    text-align: start;
+    font-style: normal;
+    font-family: Calibri;
+    font-size: medium;
 }
 /*Imagen de cuadrado*/
-#RU-Icono {
-    margin: 10px 75px 10px 75px;
-    padding: 2px 2px 2px 2px;
-    width:200px;
-    height:150px; 
-    border:none;   
+#RU-Icono1 {
+    margin: 0px 0px 0px 0px;    
+    width:80px;
+    height:80px;   
+    display:inline;
+    float:left;
+}
+#RU-Icono2 {
+    margin: 5px 0px 10px 5px;    
+    width: 80px;
+    height: 80px;    
+    display: inline;
+    float: left;
+}
+#RU-Icono3 {
+    margin: 0px 0px 0px 0px;
+    width: 80px;
+    height: 80px;
+    display: inline;
+    float: left;
     
 }
 /*Enlace a vistas*/
 #RU-Referencia{
-    margin:10px 75px 10px 75px;    
+    margin:10px 75px 20px 75px;  
+    
 }
 

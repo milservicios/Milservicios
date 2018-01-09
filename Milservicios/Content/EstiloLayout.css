@@ -91,22 +91,10 @@ body {
     float:left;
     display:inline;
 }
-#CuadradoI{
-    margin:12px 10px 13px 2px;
-    width:85px;
-    height:25px;
-    /*border:solid red 1px;*/
-    float:left;
-    display:inline;
-    text-align:center;
-    font-family:Arial;
-    font-size:17px;
-    font-style:italic;
-    font-weight:900;
-    color:#ff0000;
-}
+
 #CuadradoC {
     margin: 12px 10px 13px 2px;
+    padding-top:5px;
     width: 85px;
     height: 25px;
     /*border: solid red 1px;*/
@@ -114,21 +102,37 @@ body {
     display: inline;
     text-align: center;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 900;
     color: #ff0000;
 }
 #CuadradoD {
-    margin: 12px 2px 13px 2px;
-    width: 135px;
+    margin: 12px 2px 12px 2px;
+    padding-top: 5px;
+    width: 120px;
     height: 25px;
     /*border: solid red 1px;*/
     float: left;
     display: inline;
     text-align: center;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 900;
+    color: #ff0000;
+}
+#CuadradoE {
+    margin: 12px 10px 13px 2px;
+    padding-top: 5px;
+    width: 125px;
+    height: 25px;
+    /*border:solid red 1px;*/
+    float: left;
+    display: inline;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
     font-style: italic;
     font-weight: 900;
     color: #ff0000;
@@ -150,143 +154,29 @@ body {
 }
 #Cuadrado1 {
     margin: 12px 10px 13px 2px;
+    padding-top: 5px;
     width: 85px;
-    height: 25px;    
+    height: 25px;
     float: right;
     display: inline;
     text-align: center;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 900;
     color: #ff0000;
 }
 #Cuadrado2 {
     margin: 12px 10px 13px 2px;
+    padding-top: 5px;
     width: 85px;
-    height: 25px;    
+    height: 25px;
     float: right;
     display: inline;
     text-align: center;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 900;
     color: #ff0000;
 }
-
-/*Menu desplegable
-#BloqueDerecho {
-    margin: 7px 15px 8px 15px;
-    width: 100px;
-    height: 45px;    
-    float: right;
-    display: block;
-    background: url("../imagenes/barra1.png") no-repeat center;
-}
-
-#Cuadro2 {
-    margin: 50px 25px 0px 0px;    
-    display: block;
-}
-#Menu {
-    margin: 10px 10px 0px 0px;
-    list-style: none;
-    display: block;
-    float: right;
-}
-#Submenu {
-    margin: 5px 5px 5px 5px;
-    list-style: none;
-    display: block;
-    float: right;
-}
-#Elemento1 {
-    margin: 15px 5px 5px 5px;
-    
-    float: right;
-    list-style: none;
-    display: none;    
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:black;
-    position:absolute;
-}
-#Elemento2 {
-    margin: auto;
-    
-    list-style: none;
-    float: right;
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    position: absolute;
-}
-
-#Elemento1:hover > BloqueDerecho {
-    display: block;
-    position:relative;
-}
-#Elemento2:hover > BloqueDerecho {
-    display: block;
-    position: relative;
-}
-
-*/
-
-
-/*
-#CabeceraPrincipal {
-    background-color:#1a11eb;
-    width:100%;
-    height:60px;    
-    padding-bottom:15px;
-   
-}
-#logotipo {
-    float: left;
-    width: 165px;
-    height: 32px;
-    margin:15px;
-    background: url(../imagenes/icono1.png) no-repeat center;
-    display: block;
-    
-}
-#BarraNavegacionIzq {
-    margin:15px;
-    padding: 5px 5px 5px 5px;
-    width:350px;
-    height:30px;
-    float:left;
-    
-}    
-#BotonNav {
-    display: inline;
-    margin: 15px 5px 10px 5px;
-    padding: 3px 3px 3px 3px;
-    font-family: Arial;
-    width:85px;
-    height:25px;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: #ff0000;
-    
-}
-
-#BarraNavegacionDer {
-    margin:15px;
-    padding: 5px 5px 5px 5px;
-    float: right;
-}
-
- #BotonControlWeb {
-    display: inline;
-    margin: 15px 5px 10px 5px;
-    padding: 3px 3px 3px 3px;
-    font-family: Arial;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-    color: #ff0000;
-}
-*/

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Anuncios/RegistroAnunciosLaboresDom.css" />
+    <title>Registro de anuncios clases particulares</title>
+</head>
+<body>
+    <header id="LD-Header">
+        <h1 id="LD-TituloH">Resgistro de anuncios de labores domesticas </h1>
+    </header>
+
+    <!-- FORMULARIO WEB-->
+    <section id="LD-CuadradoCentral">
+        <form action="/GestionAnucios/RegistroAnunciosCuidadoMasc" name="RegistroLaboresDom" id="CM-Formulario" method="post" autocomplete="off">
+
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="LD-NombreT">Horario</section>
+                <input type="text" name="horario" id="LD-NombreC" required />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="LD-ApellidoT">Tienes carnet</section>
+                <input type="text" name="nacionalidad" id="LD-ApellidoC" required />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="LD-TelefonoT">Sueldo</section>
+                <input type="checkbox" name="sueldo" id="LD-TelefonoC" required />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="LD-EmailT">Ciudad</section>
+                <input type="text" name="zona" id="LD-EmailC" required />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="LD-PasswordT">Fumador</section>
+                <input type="checkbox" name="fumador" id="LD-PasswordC" required />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="LD-CiudadT">Tarea</section>
+                <input type="text" name="tarea" id="LD-CiudadC" required />
+            </section>
+
+
+            <input type="submit" value="Registrar" id="LD-Boton" />
+
+        </form>
+    </section>
+
+</body>
+</html>
+

@@ -4,20 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="88ejTObTXzwTBCqhKY7hgV2h76YhX_YSUSAGP38hiWc" />
     <link rel="stylesheet" href="~/Content/EstiloLayout.css" />
     <title>Milservicios</title>
-    <!-- @@Styles.Render("~/Content/css")
-    @@Scripts.Render("~/bundles/modernizr")-->
-
 </head>
 <body>
     <header id="Cabecera">
-        <a href="http://localhost:49555/Home/Index" id="IconoPagina"></a>         
+        <a href="/Home/Index" id="IconoPagina"></a>         
         <nav id="BloqueIzquierdo">
-            <ul id="Cuadro1">
-                <!-- <li id="CuadradoI">@Html.ActionLink("Acerca de", "About", "Home")</li>-->
+            <ul id="Cuadro1">                
                 <li id="CuadradoC">@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 <li id="CuadradoD">@Html.ActionLink("Quienes Somos", "WhoWeAre", "Home")</li>
+                <li id="CuadradoE">@Html.ActionLink("Crear anuncio", "TipoAnuncios", "GestionAnuncios")</li>
             </ul>
         </nav>        
             <nav id="BloqueDerecho">                
@@ -26,58 +24,13 @@
                     <li id="Cuadrado2">@Html.ActionLink("Registro", "RegistroUsuario", "ControlWeb")</li>                    
                 </ul>
             </nav> 
-        <!-- 
-        <nav class="menu">             
-            <ul id="Cuadro2"> 
-                <li id="Menu">
-                    <ul id="Submenu">
-                        <li id="Elemnto1">@Html.ActionLink("Acceder", "Acceso", "ControlWeb")</li>
-                        <li id="Element2">@Html.ActionLink("Registro", "RegistroUsuario", "ControlWeb")</li>
-                    </ul> 
-                </li> 
-            </ul> 
-        </nav>-->
     </header>
          <!--PIE DE PAGINA -->
     <footer>
         @RenderBody()
         <br />       
-         <p>&copy; @DateTime.Now.Year - Milservicios Sociedad Alcoholica.</p> 
+         <p>&copy; @DateTime.Now.Year - Milservicios.</p> 
     </footer> 
-    
-    <!-- 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    
-                </button>
-                @@Html.ActionLink("Milservicios", "Index", "Home", new { area = "" }, new { @@class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@@Html.ActionLink("Contacto", "Contact", "Home")</li>  
-                    <li>@@Html.ActionLink("Quienes somos", "WhoWeAre", "Home")</li>
-                </ul>
-                @@Html.Partial("_LoginPartial")                
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @@RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @@DateTime.Now.Year - Milservicios S.A.</p>
-        </footer>
-    </div>
-        -->
-   <!-- 
-    @@Scripts.Render("~/bundles/jquery")
-    @@Scripts.Render("~/bundles/bootstrap")
-    @@RenderSection("scripts", required: false)
-    -->
+
 </body>
 </html>

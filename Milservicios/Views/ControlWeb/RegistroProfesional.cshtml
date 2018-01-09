@@ -1,66 +1,96 @@
 ﻿<!DOCTYPE html>
-@using reCAPTCHA.MVC
+
 <html>
 <head>
     <link rel="stylesheet" href="~/Content/Registros/RegistroProfesional.css"/>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!-- CABECERA WEB -->
     <header id="RP-Header">
         <h1 id="RP-TituloH">Registro de Profesionales</h1>
-    </header>
-    <!-- Imagen de Milservicios-->
-    <!--  <figure><img src="~/imagenes/perro.jpg" /></figure>-->
+    </header> 
+    <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1534593046636395',
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.11'
+                });
+
+                FB.AppEvents.logPageView();
+                FB.getLoginStatus(function (response) {
+                    statusChangeCallback(response);
+                });
+                function checkLoginState() {
+                    FB.getLoginStatus(function (response) {
+                        statusChangeCallback(response);
+                    });
+                }
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <fb:login-button scope="public_profile,email"
+                     onlogin="checkLoginState();" id="facebookboton">
+    </fb:login-button>
     <!-- FORMULARIO WEB-->
     <section id="RP-CuadradoCentral">
-        <form name="RegistroProfesional" id="RP-Formulario" method="post" autocomplete="off">
+        <form action="/ControlWeb/RegistroProfesional" name="RegistroProfesional" id="RP-Formulario" method="post" autocomplete="off">
             <!-- Primera fila - Nombre -->
             <section>
                 <section id="RP-NombreT">Nombre</section>
-                <input type="text" name="Nombre" id="RP-NombreC" />
+                <input type="text" name="nombre" id="RP-NombreC" required />
             </section>
             <!-- Segunda fila - Apellidos -->
             <section>
                 <section id="RP-ApellidoT">Apellidos</section>
-                <input type="text" name="Apellido" id="RP-ApellidoC" />
+                <input type="text" name="apellido" id="RP-ApellidoC" required />
             </section>
             <!-- Tercera fila - Telefono -->
             <section>
                 <section id="RP-TelefonoT">Telefono</section>
-                <input type="tel" name="Telefono" id="RP-TelefonoC" />
+                <input type="tel" name="telefono" id="RP-TelefonoC" required />
             </section>
             <!-- Cuarta fila - Email -->
             <section>
                 <section id="RP-EmailT">Email</section>
-                <input type="email" name="Email" id="RP-EmailC" />
+                <input type="email" name="email" id="RP-EmailC" required />
             </section>
             <!-- Quinta fila - Contraseña -->
             <section>
                 <section id="RP-PasswordT">Contraseña</section>
-                <input type="password" name="Contraseña" id="RP-PasswordC" />
+                <input type="password" name="contraseña" id="RP-PasswordC" required />
             </section>
             <!-- Sexta fila - Sexo -->
             <section>
                 <section id="RP-SexoT">Sexo</section>
-                <input type="text" name="Sexo" id="RP-SexoC" />
+                <input type="text" name="sexo" id="RP-SexoC" required />
             </section>
             <!-- Septima fila - Edad -->
             <section>
                 <section id="RP-EdadT">Edad</section>
-                <input type="number" name="Edad" id="RP-EdadC" />
+                <input type="number" name="edad" id="RP-EdadC" min="1" max="150"  required/>
             </section>
             <!-- Octava fila - Descripcion -->
             <section>
                 <section id="RP-DescripcionT">Descripcion</section>
-                <input type="text" name="Descripcion" id="RP-DescripcionC" />
+                <input type="text" name="descripcion" id="RP-DescripcionC" required />
             </section>
             <!-- Novena fila - Zona -->
             <section>
                 <section id="RP-ZonaT">Zona</section>
-                <input type="text" name="Zona" id="RP-ZonaC" />
+                <input type="text" name="zona" id="RP-ZonaC" required />
             </section>
-            @Html.Recaptcha()
-            @Html.ValidationMessage("ReCaptcha")
+   <!--          <div class="g-recaptcha" data-sitekey="6LdmozwUAAAAAEPkQK5ZXqaGSy6rJ7OB9JT9bBva"></div> -->
             <!-- Boton de registro -->
             <section>
                 <input type="submit" value="Registrar" id="RP-Boton" />
