@@ -1,0 +1,254 @@
+﻿/* VISTA PERFIL FAMILIA
+ * Cada "id" sera registrado de la forma
+ * PF-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+/*Cabecera de la vista*/
+#PF-Header {
+    width: 100%;
+    height: 100%;
+}
+#PF-TituloPrincipal {   
+    margin: 15px 400px 15px 470px;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    height: 40px;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;    
+}
+/*BODY NO TOCAR*/
+body {
+    width: 100%;
+    height: 100%;
+}
+/*Cuadro principal*/
+#PF-CuadroCentral {
+    margin: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
+    width: 1250px;
+    height: 550px;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+    border: solid white 2px;
+}
+/*Titulo del cuadro principal*/
+#PF-Informacion {
+    margin: 5px 450px 0px 420px;
+    padding:3px 30px 3px 30px;
+    width: 170px;
+    height: 30px;    
+    /*border: 1px black solid;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 900;
+}
+/*Cuadrado A*/
+#PF-CuadradoA{
+    margin:10px 10px 20px 20px;
+    width:230px;
+    height:400px;    
+    float:left;
+    border:2px white solid;
+}
+/*Imagen en el CuadradoA (Foto perfil)*/
+#PF-Foto {
+    margin: 10px 15px 5px 15px;
+    width: 200px;
+    height: 200px;
+    display:inline;
+    float:left;
+    border:2px solid white;
+}
+/*Cuadrado B*/
+#PF-CuadradoB {
+    margin: 10px 20px 20px 10px;
+    width: 950px;
+    height: 400px;
+    display: inline;
+    float: left;
+    border: 2px white solid;
+}
+/*Elemento del Cuadrado B*/
+/*Cuadrado Izquierdo*/
+#PF-Cuadrado1 {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 350px;
+    height: 350px;
+    display: inline;
+    float: left;    
+}
+/*Nombre Texto*/
+#PF-NombreT {
+    width: 70px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+/*Nombre Recuadro*/
+#PF-NombreC {
+    margin-left: 5px;
+    width: 200px;
+    height: 30px;
+    display: inline;
+    float: left;
+    font-family: Calibri;
+    
+}
+/*Apellido Texto*/
+#PF-ApellidoT {
+    width: 70px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+/*Apellido Recuadro*/
+#PF-ApellidoC {
+    margin-left: 5px;
+    width: 200px;
+    height: 30px;
+    display: inline;
+    float: left;
+    font-family: Calibri;
+    
+}
+/*Telefono Texto*/
+#PF-TelefonoT {
+    width: 70px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+/*Telefono Recuadro*/
+#PF-TelefonoC {
+    margin-left: 5px;
+    width: 200px;
+    height: 30px;
+    display: inline;
+    float: left;
+    font-family: Calibri;
+    
+}
+/*Email Texto*/
+#PF-EmailT {
+    width: 70px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+/*Email Recuadro*/
+#PF-EmailC {
+    margin-left: 5px;
+    width: 200px;
+    height: 30px;
+    float: left;
+    font-family: Calibri;
+    
+}
+/*Ciudad Texto*/
+#PF-CiudadT {
+    width: 70px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    font-family: Calibri;
+    font-weight: 900;
+    
+}
+/*Ciudad Recuadro*/
+#PF-CiudadC {
+    margin-left: 5px;
+    width: 200px;
+    height: 30px;
+    display: inline;
+    float: left;
+    font-family: Calibri;
+    
+}
+/*Cuadrado Derecho*/
+#PF-Cuadrado2 {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    width: 510px;
+    height: 350px;
+    display: inline;
+    float: left;
+}
+/*Titulo del Cuadrado Derecho*/
+#PF-MapaTitulo {
+    margin: 10px 175px 5px 160px;    
+    width: 180px;
+    height: 30px;
+    /*border: 1px black solid;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 900;
+}
+/*********************************************/
+/*Cuadrado C*/
+#PF-CuadradoC {
+    margin: 10px 15px 20px 15px;
+    width: 200px;
+    height: 150px;
+    display: block;
+    float: left;
+    border: 2px white solid;
+}
+/*Elemento del Cuadrado C*/
+/*Link 1 - Editar perfil*/
+#PF-Link1 {
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+    font-family: Calibri;
+    font-size:medium;
+    font-weight:600;
+    color:#0f81bb;
+    
+}
+/*Link 2 - Editar perfil*/
+#PF-Link2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: medium;
+    font-weight: 600;
+    color: #0f81bb;
+}
+/*Link 3 - Editar perfil*/
+#PF-Link3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: medium;
+    font-weight: 600;
+    color: #0f81bb;
+}
+/*Link 4 - Editar perfil*/
+#PF-Link4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: medium;
+    font-weight: 600;
+    color: #0f81bb;
+}

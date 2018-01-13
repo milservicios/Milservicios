@@ -51,6 +51,15 @@
     <Reference Include="FacebookAds, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Facebook-Ads-SDK.2.9.0\lib\net452\FacebookAds.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Apis, Version=1.32.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.32.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.32.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.32.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.32.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.32.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -84,8 +93,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="reCAPTCHA.MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\reCAPTCH.MVC.1.0.1\lib\net45\reCAPTCHA.MVC.dll</HintPath>
@@ -280,10 +289,15 @@
     <Content Include="Content\Anuncios\RegistroAnunciosCuidadoMasc.css" />
     <Content Include="Content\Anuncios\RegistroAnunciosCuidadoPers.css" />
     <Content Include="Content\Anuncios\RegistroAnunciosLaboresDom.css" />
+    <Content Include="Content\Anuncios\TipoAnuncio.css" />
+    <Content Include="Content\Anuncios\VistaAnuncios.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\IndexEstilo.css" />
     <Content Include="Content\EstiloLayout.css" />
+    <Content Include="Content\Perfiles\PerfilAmbos.css" />
+    <Content Include="Content\Perfiles\PerfilFamilia.css" />
+    <Content Include="Content\Perfiles\PerfilProfesional.css" />
     <Content Include="Content\Registros\Acceso.css" />
     <Content Include="Content\Registros\Registro.css" />
     <Content Include="Content\Registros\RegistroAmbos.css" />
@@ -340,6 +354,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Perfil\Mapa.js" />
     <Content Include="Scripts\Registros\registrofamilia.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -396,6 +411,10 @@
     <Content Include="Views\GestionAnuncios\RegistroAnunciosCuidadoPers.cshtml" />
     <Content Include="Views\GestionAnuncios\RegistroAnunciosLaboresDom.cshtml" />
     <Content Include="Views\GestionAnuncios\TipoAnuncios.cshtml" />
+    <Content Include="Views\Perfil\ModificarPerfilFamilia.cshtml" />
+    <Content Include="Views\Perfil\ModificarPerfilProfesional.cshtml" />
+    <Content Include="Views\Perfil\ModificarPerfilAmbos.cshtml" />
+    <Content Include="Views\GestionAnuncios\VistaAnuncios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

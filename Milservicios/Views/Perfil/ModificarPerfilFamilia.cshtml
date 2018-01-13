@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/RegistroFamilia.css" />
+</head>
+<body>
+    <!-- CABECERA WEB -->
+    <header id="RF-Header">
+        <h1 id="RF-TituloHM">Modificar perfil de familia</h1>
+    </header>
+    <!-- FORMULARIO WEB-->
+    <section id="RF-CuadradoCentral">
+        <form action="/ControlWeb/RegistroFamilia" name="RegistroFamilia" id="RF-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="RF-NombreT">Nombre</section>
+                <input type="text" name="nombre" id="RF-NombreC" />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="RF-ApellidoT">Apellidos</section>
+                <input type="text" name="apellido" id="RF-ApellidoC" />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="RF-TelefonoT">Telefono</section>
+                <input type="tel" name="telefono" id="RF-TelefonoC" />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="RF-EmailT">Email</section>
+                <input type="email" name="email" id="RF-EmailC" />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="RF-PasswordT">Contraseña</section>
+                <input type="password" name="contraseña" id="RF-PasswordC" />
+            </section>
+            <!-- Sexta fila - Ciudad -->
+            <section>
+                <section id="RF-CiudadT">Ciudad</section>
+                <input type="text" name="ciudad" id="RF-CiudadC" />
+            </section>
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Aceptar" id="RF-Boton" />
+            </section>
+        </form>
+    </section>
+</body>
+</html>
+

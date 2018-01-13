@@ -1,52 +1,86 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    string[] palabras = new string [5];
+    palabras[0] = "Alberto";
+    palabras[1] = "de Marcos Molina";
+    palabras[2] = "679213821";
+    palabras[3] = "alberto@gmail.com";
+    palabras[4] = "Alcala de Henares";
+}
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="~/Content/Registros/RegistroFamilia.css" />    
+    <link rel="stylesheet" href="~/Content/Perfiles/PerfilFamilia.css" />    
 </head>
 <body>
     <!-- CABECERA WEB -->
-    <header id="RF-Header">
-        <h1 id="RF-TituloHM">Modificar perfil de familia</h1>
+    <header id="PF-Header">        
+        <h1 id="PF-TituloPrincipal">Perfil de Familia</h1>
     </header>
-    <!-- FORMULARIO WEB-->
-    <section id="RF-CuadradoCentral">
-        <form action="/ControlWeb/RegistroFamilia" name="RegistroFamilia" id="RF-Formulario" method="post" autocomplete="off">
-            <!-- Primera fila - Nombre -->
+    <!-- CUADRO PRINCIPAL DE LA PAGINA WEB PERFIL FAMILIA-->
+    <section id="PF-CuadroCentral">
+        <h3 id="PF-Informacion">Informacion General</h3>
+        <br />
+        <!-- Cuadrado A -->
+        <section id="PF-CuadradoA">
+            <!-- Foto de perfil-->
             <section>
-                <section id="RF-NombreT">Nombre</section>
-                <input type="text" name="nombre" id="RF-NombreC"  />
+                <img id="PF-Foto" src="~/imagenes/foto.png"/>
             </section>
-            <!-- Segunda fila - Apellidos -->
-            <section>
-                <section id="RF-ApellidoT">Apellidos</section>
-                <input type="text" name="apellido" id="RF-ApellidoC"  />
+            <!-- Cuadrado C -->
+            <section id="PF-CuadradoC">
+                <a href="/Perfil/ModificarPerfilFamilia"><section id="PF-Link1">Editar perfil</section></a>
+                <a href="/GestionAnuncios/TipoAnuncios"><section id="PF-Link2">Crea anuncio</section></a>
+                <a href="/GestionAnuncios/VistaAnuncios"><section id="PF-Link3">Ver anuncios</section></a>
+                <a href="/Perfil/ModificarPerfilFamilia"><section id="PF-Link4">Ver reservas</section></a>
             </section>
-            <!-- Tercera fila - Telefono -->
-            <section>
-                <section id="RF-TelefonoT">Telefono</section>
-                <input type="tel" name="telefono" id="RF-TelefonoC"  />
+        </section>
+        <!-- Cuadrado B -->
+        <section id="PF-CuadradoB">
+            <!-- Cuadrado Izquierdo-->
+            <section id="PF-Cuadrado1">
+                <!-- Primera fila - Nombre -->
+                <section>
+                    <section id="PF-NombreT">Nombre</section>
+                    <section id="PF-NombreC">@palabras[0]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Segunda fila - Apellidos -->
+                <section>
+                    <section id="PF-ApellidoT">Apellidos</section>
+                    <section id="PF-ApellidoC">@palabras[1]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Tercera fila - Telefono -->
+                <section>
+                    <section id="PF-TelefonoT">Telefono</section>
+                    <section id="PF-TelefonoC">@palabras[2]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Cuarta fila - Email -->
+                <section>
+                    <section id="PF-EmailT">Email</section>
+                    <section id="PF-EmailC">@palabras[3]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Quinta fila - Ciudad -->
+                <section>
+                    <section id="PF-CiudadT">Ciudad</section>
+                    <section id="PF-CiudadC">@palabras[4]</section>
+                    <br />
+                </section>
+                <br />
             </section>
-            <!-- Cuarta fila - Email -->
-            <section>
-                <section id="RF-EmailT">Email</section>
-                <input type="email" name="email" id="RF-EmailC"  />
+            <!-- Cuadrado Derecho-->
+            <section id="PF-Cuadrado2">
+                <h3 id="PF-MapaTitulo">Mapa de localizacion</h3>
+                <section></section>
             </section>
-            <!-- Quinta fila - Contraseña -->
-            <section>
-                <section id="RF-PasswordT">Contraseña</section>
-                <input type="password" name="contraseña" id="RF-PasswordC"  />
-            </section>
-            <!-- Sexta fila - Ciudad -->
-            <section>
-                <section id="RF-CiudadT">Ciudad</section>
-                <input type="text" name="ciudad" id="RF-CiudadC"  />
-            </section>            
-            <!-- Boton de registro -->
-            <section>
-                <input type="submit" value="Aceptar" id="RF-Boton" />
-            </section>
-        </form>
-    </section>
+        </section>
+    </section>    
 </body>
 </html>
 

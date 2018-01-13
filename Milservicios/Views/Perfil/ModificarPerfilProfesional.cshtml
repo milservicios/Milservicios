@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Registros/RegistroProfesional.css" />
+</head>
+<body>
+    <!-- CABECERA WEB -->
+    <header id="RP-Header">
+        <h1 id="RP-TituloHM">Modificar perfil de profesional</h1>
+    </header>
+    <!-- FORMULARIO WEB-->
+    <section id="RP-CuadradoCentral">
+        <form action="/ControlWeb/RegistroProfesional" name="RegistroProfesional" id="RP-Formulario" method="post" autocomplete="off">
+            <!-- Primera fila - Nombre -->
+            <section>
+                <section id="RP-NombreT">Nombre</section>
+                <input type="text" name="nombre" id="RP-NombreC" />
+            </section>
+            <!-- Segunda fila - Apellidos -->
+            <section>
+                <section id="RP-ApellidoT">Apellidos</section>
+                <input type="text" name="apellido" id="RP-ApellidoC" />
+            </section>
+            <!-- Tercera fila - Telefono -->
+            <section>
+                <section id="RP-TelefonoT">Telefono</section>
+                <input type="tel" name="telefono" id="RP-TelefonoC" />
+            </section>
+            <!-- Cuarta fila - Email -->
+            <section>
+                <section id="RP-EmailT">Email</section>
+                <input type="email" name="email" id="RP-EmailC" />
+            </section>
+            <!-- Quinta fila - Contraseña -->
+            <section>
+                <section id="RP-PasswordT">Contraseña</section>
+                <input type="password" name="contraseña" id="RP-PasswordC" />
+            </section>
+            <!-- Sexta fila - Sexo -->
+            <section>
+                <section id="RP-SexoT">Sexo</section>
+                <input type="text" name="sexo" id="RP-SexoC" />
+            </section>
+            <!-- Septima fila - Edad -->
+            <section>
+                <section id="RP-EdadT">Edad</section>
+                <input type="number" name="edad" id="RP-EdadC" min="1" max="150" />
+            </section>
+            <!-- Octava fila - Descripcion -->
+            <section>
+                <section id="RP-DescripcionT">Descripcion</section>
+                <input type="text" name="descripcion" id="RP-DescripcionC" />
+            </section>
+            <!-- Novena fila - Zona -->
+            <section>
+                <section id="RP-ZonaT">Zona</section>
+                <input type="text" name="zona" id="RP-ZonaC" />
+            </section>
+            <!-- Boton de registro -->
+            <section>
+                <input type="submit" value="Aceptar" id="RP-Boton" />
+            </section>
+        </form>
+    </section>
+</body>
+</html>

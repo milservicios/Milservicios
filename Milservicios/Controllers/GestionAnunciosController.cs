@@ -29,6 +29,7 @@ namespace Milservicios.Controllers
         {
             return View();
         }
+        //post
         [HttpPost]
         public ActionResult RegistroAnunciosClasPar(int duracion,
             string horario,
@@ -139,5 +140,12 @@ namespace Milservicios.Controllers
             db.RegistroAnunciosLaborDom(duracion, horario, nacionalidad, carnet, sueldo, zona, fumador, tarea);
             return Redirect("/Home/Index");
         }
+        //Retorno de las vistas de anuncios
+        [HttpGet]
+        public ActionResult VistaAnuncios() { return View(); }
+        [HttpPost]
+        public ActionResult VistaAnuncios(string abc) { return View(); }
     }
+
+//Fin2
 }

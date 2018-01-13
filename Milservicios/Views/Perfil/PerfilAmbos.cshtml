@@ -1,73 +1,118 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string[] palabras = new string[9];
+    palabras[0] = "Alberto";
+    palabras[1] = "de Marcos Molina";
+    palabras[2] = "679213821";
+    palabras[3] = "alberto@gmail.com";
+    palabras[4] = "Alcala del henares";
+    palabras[5] = "Hombre";
+    palabras[6] = "25";
+    palabras[7] = "Informatico de la UAH";
+    palabras[8] = "Corredor del henares";
+}
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="~/Content/Registros/RegistroAmbos.css" />
+    <link rel="stylesheet" href="~/Content/Perfiles/PerfilAmbos.css" />
 </head>
 <body>
     <!-- CABECERA WEB -->
-    <header id="RA-Header">
-        <h1 id="RA-TituloHM">Modificar perfil de ambos</h1>
+    <header id="PA-Header">
+        <h1 id="PA-TituloPrincipal">Perfil de Ambos</h1>
     </header>
-    <!-- FORMULARIO WEB-->
-    <section id="RA-CuadradoCentral">
-        <form action="/ControlWeb/RegistroAmbos" name="RegistroAmbos" id="RA-Formulario" method="post" autocomplete="off">
-            <!-- Primera fila - Nombre -->
+    <!-- CUADRO PRINCIPAL DE LA PAGINA WEB PERFIL FAMILIA-->
+    <section id="PA-CuadroCentral">
+        <h3 id="PA-Informacion">Informacion General</h3>
+        <br />
+        <!-- Cuadrado A -->
+        <section id="PA-CuadradoA">
+            <!-- Foto de perfil-->
             <section>
-                <section id="RA-NombreT">Nombre</section>
-                <input type="text" name="nombre" id="RA-NombreC"  />
+                <img id="PA-Foto" src="~/imagenes/foto.png" />
             </section>
-            <!-- Segunda fila - Apellidos -->
-            <section>
-                <section id="RA-ApellidoT">Apellidos</section>
-                <input type="text" name="apellido" id="RA-ApellidoC"  />
+            <!-- Cuadrado C -->
+            <section id="PA-CuadradoC">
+                <a href="/Perfil/ModificarPerfilProfesional"><section id="PA-Link1">Editar perfil</section></a>
+                <a href="/GestionAnuncios/TipoAnuncios"><section id="PA-Link2">Crea anuncio</section></a>
+                <a href="/GestionAnuncios/VistaAnuncios"><section id="PA-Link3">Ver anuncios</section></a>
+                <a href="/Perfil/ModificarPerfilFamilia"><section id="PA-Link4">Ver reservas</section></a>
             </section>
-            <!-- Tercera fila - Telefono -->
-            <section>
-                <section id="RA-TelefonoT">Telefono</section>
-                <input type="tel" name="telefono" id="RA-TelefonoC"  />
+        </section>
+        <!-- Cuadrado B -->
+        <section id="PA-CuadradoB">
+            <!-- Cuadrado Izquierdo-->
+            <section id="PA-Cuadrado1">
+                <!-- Primera fila - Nombre -->
+                <section>
+                    <section id="PA-NombreT">Nombre</section>
+                    <section id="PA-NombreC">@palabras[0]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Segunda fila - Apellidos -->
+                <section>
+                    <section id="PA-ApellidoT">Apellidos</section>
+                    <section id="PA-ApellidoC">@palabras[1]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Tercera fila - Telefono -->
+                <section>
+                    <section id="PA-TelefonoT">Telefono</section>
+                    <section id="PA-TelefonoC">@palabras[2]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Cuarta fila - Email -->
+                <section>
+                    <section id="PA-EmailT">Email</section>
+                    <section id="PA-EmailC">@palabras[3]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Quinta fila - Ciudad -->
+                <section>
+                    <section id="PA-CiudadT">Ciudad</section>
+                    <section id="PA-CiudadC">@palabras[4]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Sexta fila - Sexo -->
+                <section>
+                    <section id="PA-SexoT">Sexo</section>
+                    <section id="PA-SexoC">@palabras[5]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Septima fila - Edad -->
+                <section>
+                    <section id="PA-EdadT">Edad</section>
+                    <section id="PA-EdadC">@palabras[6]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Octava fila - Descripcion -->
+                <section>
+                    <section id="PA-DescripcionT">Descripcion</section>
+                    <section id="PA-DescripcionC">@palabras[7]</section>
+                    <br />
+                </section>
+                <br />
+                <!-- Novena fila - Zona -->
+                <section>
+                    <section id="PA-ZonaT">Zona</section>
+                    <section id="PA-ZonaC">@palabras[8]</section>
+                    <br />
+                </section>
+                <br />
             </section>
-            <!-- Cuarta fila - Email -->
-            <section>
-                <section id="RA-EmailT">Email</section>
-                <input type="email" name="email" id="RA-EmailC"  />
+            <!-- Cuadrado Derecho-->
+            <section id="PA-Cuadrado2">
+                <h3 id="PA-MapaTitulo">Mapa de localizacion</h3>
+                <section></section>
             </section>
-            <!-- Quinta fila - Contraseña -->
-            <section>
-                <section id="RA-PasswordT">Contraseña</section>
-                <input type="password" name="contraseña" id="RA-PasswordC"  />
-            </section>
-            <!-- Sexta fila - Ciudad -->
-            <section>
-                <section id="RA-CiudadT">Ciudad</section>
-                <input type="text" name="ciudad" id="RA-CiudadC"  />
-            </section>
-            <!-- Septima fila - Sexo -->
-            <section>
-                <section id="RA-SexoT">Sexo</section>
-                <input type="text" name="sexo" id="RA-SexoC"  />
-            </section>
-            <!-- Octava fila - Edad -->
-            <section>
-                <section id="RA-EdadT">Edad</section>
-                <input type="number" name="edad" id="RA-EdadC" min="1" max="150"  />
-            </section>
-            <!-- Novena fila - Descripcion -->
-            <section>
-                <section id="RA-DescripcionT">Descripcion</section>
-                <input type="text" name="descripcion" id="RA-DescripcionC"  />
-            </section>
-            <!-- Decima fila - Zona -->
-            <section>
-                <section id="RA-ZonaT">Zona</section>
-                <input type="text" name="zona" id="RA-ZonaC"  />
-            </section>
-            <!-- Boton de registro -->
-            <section>
-                <input type="submit" value="Aceptar" id="RA-Boton" />
-            </section>
-        </form>
+        </section>
     </section>
 </body>
 </html>
-
 

@@ -25,7 +25,7 @@ namespace Milservicios.Models.TablasSQL
         public int Id_Usuario { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ANUNCIO> ANUNCIO { get; set; }
+        public virtual ICollection<ANUNCIO> ANUNCIO { get; set; }        
         public virtual USUARIO USUARIO { get; set; }
     }
 }
