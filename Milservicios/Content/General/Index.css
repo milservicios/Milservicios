@@ -1,0 +1,167 @@
+﻿/*BODY NO TOCAR*/
+body {
+    width: 100%;
+    height: 100%;    
+}
+/* VISTA HOME INDEX
+ * Cada "id" sera registrado de la forma
+ * HI-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+/*Cuerpo Principal*/
+#HI-CuerpoPrincipal {  
+    margin:5px 10px 0px 13px;
+    width: 1320px;
+    height: 950px;   
+}
+/*Banner*/
+#HI-Banner{    
+   
+}
+/*Pie de foto*/
+#HI-PiePagina{
+    margin:1px 10px 0px 50px;
+}
+/*Boton Registro*/
+#HI-BotonRegistro{
+    margin:5px 480px 0px 480px;    
+}
+/*Cuadro Columnas*/
+#HI-CuadroColumnas{
+    margin:0px 5px 0px 7px;
+    padding:0px 0px 0px 0px;
+    width:1300px;
+    height:400px;
+   /* border:2px solid black;*/
+}
+/*Cuadro1*/
+#HI-Cuadro1 {
+    width: 200px;
+    height: 300px;
+    /* border:1px solid black;*/
+    float: left;
+    display: inline;
+    margin: 25px 100px 20px 100px;
+    -webkit-transition: width 1s ease-in-out 0s;
+}
+/*Cuadro1 pasada de puntero*/
+#HI-Cuadro1:hover {
+    width: 200px;
+    height: 300px;
+    background-color:#49aee1;
+}
+/*Cuadro2*/
+#HI-Cuadro2 {
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid black;*/
+    float: left;
+    display: inline;
+    margin: 25px 100px 20px 0px;
+    -webkit-transition: width 1s ease-in-out 0s;
+}
+/*Cuadro2 pasada de puntero*/
+#HI-Cuadro2:hover {
+        width: 200px;
+        height: 300px;
+        background-color: #49aee1;
+    }
+/*Cuadro3*/
+#HI-Cuadro3 {
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid black;*/
+    float: left;
+    display: inline;
+    margin: 25px 100px 20px 0px;
+    -webkit-transition: width 1s ease-in-out 0s;
+}
+/*Cuadro3 pasada de puntero*/
+#HI-Cuadro3:hover {
+    width: 200px;
+    height: 300px;
+    background-color: #49aee1;
+}
+/*Cuadro4*/
+#HI-Cuadro4 {
+    width: 200px;
+    height: 300px;
+    border: 1px solid white;
+    float: left;
+    display: inline;
+    margin: 25px 0px 20px 0px;
+    -webkit-transition: width 1s ease-in-out 0s;
+}
+/*Cuadro4 pasada de puntero*/
+#HI-Cuadro4:hover {
+    width: 200px;
+    height: 300px;
+    background-color: #49aee1;
+}
+/*Imagenes cuadros*/
+#HI-Imagen {
+    margin: 10px 30px 0px 35px;
+    width: 128px;
+    height: 128px;
+}
+/*Titulos de las columnas*/
+#HI-TituloColumnas1 {
+    margin: 10px 30px 0px 40px;
+    width: 120px;
+    height: 30px;
+    font-family:Arial;
+    font-weight:600;
+    font-size:small;
+}
+#HI-TituloColumnas2 {
+    margin: 10px 30px 0px 30px;
+    width: 140px;
+    height: 30px;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: small;
+}
+#HI-TituloColumnas3 {
+    margin: 10px 30px 0px 40px;
+    width: 140px;
+    height: 30px;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: small;
+}
+#HI-TituloColumnas4 {
+    margin: 10px 50px 0px 30px;
+    width: 160px;
+    height: 30px;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: small;
+}
+/*Parrafo 1*/
+#HI-Caja1 {
+    /*border: 1px solid black;*/
+    margin: 5px 20px 5px 30px;
+    width: 150px;
+    height: 95px;
+}
+/*Parrafo 2*/
+#HI-Caja2{
+   /* border:1px solid black;*/
+    margin:5px 20px 5px 30px;
+    width:155px;
+    height:70px;
+}
+/*Parrafo 3*/
+#HI-Caja3 {
+   /* border: 1px solid black;*/
+    margin: 5px 20px 5px 30px;
+    width: 150px;
+    height: 80px;
+}
+/*Parrafo 4*/
+#HI-Caja4 {
+    /*border: 1px solid black;*/
+    margin: 5px 20px 5px 30px;
+    width: 150px;
+    height: 90px;
+}

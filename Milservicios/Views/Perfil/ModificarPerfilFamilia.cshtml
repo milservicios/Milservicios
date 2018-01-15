@@ -1,49 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="~/Content/Registros/RegistroFamilia.css" />
+    <link rel="stylesheet"href="~/Content/Perfiles/ModificarPerfilFamilia.css" />
 </head>
 <body>
     <!-- CABECERA WEB -->
-    <header id="RF-Header">
-        <h1 id="RF-TituloHM">Modificar perfil de familia</h1>
+    <header id="MPF-Header">
+        <h1 id="MPF-TituloHM">Modificar perfil de familia</h1>
     </header>
     <!-- FORMULARIO WEB-->
-    <section id="RF-CuadradoCentral">
-        <form action="/ControlWeb/RegistroFamilia" name="RegistroFamilia" id="RF-Formulario" method="post" autocomplete="off">
+    <section id="MPF-CuadradoCentral">
+        <form action="/Perfil/PerfilFamilia" name="PerfilFamilia" id="MPF-Formulario" method="post" autocomplete="off">
             <!-- Primera fila - Nombre -->
             <section>
-                <section id="RF-NombreT">Nombre</section>
-                <input type="text" name="nombre" id="RF-NombreC" />
+                <section id="MPF-NombreT">Nombre</section>
+                <input type="text" name="nombre" id="MPF-NombreC" />
             </section>
             <!-- Segunda fila - Apellidos -->
             <section>
-                <section id="RF-ApellidoT">Apellidos</section>
-                <input type="text" name="apellido" id="RF-ApellidoC" />
+                <section id="MPF-ApellidoT">Apellidos</section>
+                <input type="text" name="apellido" id="MPF-ApellidoC" />
             </section>
             <!-- Tercera fila - Telefono -->
             <section>
-                <section id="RF-TelefonoT">Telefono</section>
-                <input type="tel" name="telefono" id="RF-TelefonoC" />
+                <section id="MPF-TelefonoT">Telefono</section>
+                <input type="tel" name="telefono" id="MPF-TelefonoC" />
             </section>
             <!-- Cuarta fila - Email -->
             <section>
-                <section id="RF-EmailT">Email</section>
-                <input type="email" name="email" id="RF-EmailC" />
+                <section id="MPF-EmailT">Email</section>
+                <input type="email" name="email" id="MPF-EmailC" />
             </section>
             <!-- Quinta fila - Contraseña -->
             <section>
-                <section id="RF-PasswordT">Contraseña</section>
-                <input type="password" name="contraseña" id="RF-PasswordC" />
+                <section id="MPF-PasswordT">Contraseña</section>
+                <input type="password" name="contraseña" id="MPF-PasswordC" />
             </section>
             <!-- Sexta fila - Ciudad -->
             <section>
-                <section id="RF-CiudadT">Ciudad</section>
-                <input type="text" name="ciudad" id="RF-CiudadC" />
+                <section id="MPF-CiudadT">Ciudad</section>
+                <input type="text" name="ciudad" id="MPF-CiudadC" />
+            </section>
+            <!-- Septima fila - Localizacion -->
+            <section>
+                <section id="MPF-LocalizacionT">Localizacion</section>
+                <input type="text" name="localizacion" id="MPF-LocalizacionC" />
             </section>
             <!-- Boton de registro -->
             <section>
-                <input type="submit" value="Aceptar" id="RF-Boton" />
+                <input type="submit" value="Aceptar" id="MPF-Boton" />
             </section>
         </form>
     </section>

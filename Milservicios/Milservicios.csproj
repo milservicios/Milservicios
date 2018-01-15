@@ -293,8 +293,12 @@
     <Content Include="Content\Anuncios\VistaAnuncios.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\General\Index.css" />
     <Content Include="Content\IndexEstilo.css" />
     <Content Include="Content\EstiloLayout.css" />
+    <Content Include="Content\Perfiles\ModificarPerfilAmbos.css" />
+    <Content Include="Content\Perfiles\ModificarPerfilFamilia.css" />
+    <Content Include="Content\Perfiles\ModificarPerfilProfesional.css" />
     <Content Include="Content\Perfiles\PerfilAmbos.css" />
     <Content Include="Content\Perfiles\PerfilFamilia.css" />
     <Content Include="Content\Perfiles\PerfilProfesional.css" />

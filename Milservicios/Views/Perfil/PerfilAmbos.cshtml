@@ -109,7 +109,38 @@
             <!-- Cuadrado Derecho-->
             <section id="PA-Cuadrado2">
                 <h3 id="PA-MapaTitulo">Mapa de localizacion</h3>
-                <section></section>
+                <section id="PA-CuadroMap">
+                    <script>
+                        function initMap() {
+                            //Mapa
+                            var map = new google.maps.Map(document.getElementById('PA-CuadroMap'), {
+                                zoom: 17,
+                                center: { lat: 40.513034, lng: -3.348728 },
+                                mapTypeControl: true,
+                                mapTypeControlOptions: {
+                                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                                    position: google.maps.ControlPosition.TOP_CENTER
+                                },
+                                zoomControl: true,
+                                zoomControlOptions: {
+                                    position: google.maps.ControlPosition.LEFT_CENTER
+                                },
+                                scaleControl: true,
+                                streetViewControl: true,
+                                streetViewControlOptions: {
+                                    position: google.maps.ControlPosition.LEFT_TOP
+                                },
+                                fullscreenControl: true
+                            });
+                            var marker = new google.maps.Marker({
+                                position: { lat: 40.513034, lng: -3.348728 },
+                                map: map,
+                                title: 'Usted se encuentra aquí'
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZQp616kSgYGzMCGI7lXIRWF8G3Qsmvg0&callback=initMap"></script>
+                </section>
             </section>
         </section>
     </section>

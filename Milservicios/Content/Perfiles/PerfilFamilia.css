@@ -182,8 +182,7 @@ body {
 /*Cuadrado Derecho*/
 #PF-Cuadrado2 {
     margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid black;
+    padding: 10px 10px 10px 10px;    
     width: 510px;
     height: 350px;
     display: inline;
@@ -193,22 +192,26 @@ body {
 #PF-MapaTitulo {
     margin: 10px 175px 5px 160px;    
     width: 180px;
-    height: 30px;
-    /*border: 1px black solid;*/
+    height: 30px;    
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 15px;
     font-weight: 900;
 }
-/*********************************************/
+/*Cuadro del Mapa*/
+#PF-CuadroMap {
+    margin: 5px 30px 5px 30px;
+    width: 450px;
+    height: 270px;
+    border: 2px white solid;
+}
 /*Cuadrado C*/
 #PF-CuadradoC {
     margin: 10px 15px 20px 15px;
     width: 200px;
     height: 150px;
     display: block;
-    float: left;
-    border: 2px white solid;
+    float: left;    
 }
 /*Elemento del Cuadrado C*/
 /*Link 1 - Editar perfil*/

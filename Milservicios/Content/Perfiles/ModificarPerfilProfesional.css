@@ -1,0 +1,240 @@
+﻿
+/* VISTA REGISTRO PROFESIONAL
+ * Cada "id" sera registrado de la forma
+ * MPP-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+body {
+    width: 100%;
+    height: 100%;
+}
+/*Cabecera de la vista*/
+
+#MPP-Header {
+    width: 100%;
+    height: 100%;
+}
+/*Titulo de la cabera*/
+#MPP-TituloH {
+    margin: 15px 375px 15px 375px;
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}
+/*Cuadrado central de la vista*/
+#MPP-CuadradoCentral {
+    margin: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
+    width: 1250px;
+    height: 800px;
+    border: solid white 2px;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+}
+/*Formulario de la vista registro de familias*/
+#MPP-Formulario {
+    width: 450px;
+    height: 700px;
+    margin: 25px 325px 25px 325px;
+    padding: 15px 15px 15px 15px;
+    border: solid 2px white;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+}
+/*Etiquetas para el formulario*/
+/*Texto de Nombre*/
+#MPP-NombreT {
+    /* border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Nombre*/
+#MPP-NombreC {
+    /*border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Apellidos*/
+#MPP-ApellidoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Apellidos*/
+#MPP-ApellidoC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Telefono*/
+#MPP-TelefonoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Telefono*/
+#MPP-TelefonoC {
+    /*border: solid black 2px;*/
+    width: 150px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Email*/
+#MPP-EmailT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Email*/
+#MPP-EmailC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Password*/
+#MPP-PasswordT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Password*/
+#MPP-PasswordC {
+    /* border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Sexo*/
+#MPP-SexoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Sexo*/
+#MPP-SexoC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Edad*/
+#MPP-EdadT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Edad*/
+#MPP-EdadC {
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Descripcion*/
+#MPP-DescripcionT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Descripcion*/
+#MPP-DescripcionC {
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de*/
+#MPP-ZonaT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Zona*/
+#MPP-ZonaC {
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Localizacion*/
+#MPP-LocalizacionT {
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Localizacion*/
+#MPP-LocalizacionC {
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Boton registro profesional*/
+#MPP-Boton {
+    margin: 20px 20px 20px 125px;
+    width: 100px;
+    height: 25px;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Modificacion perfil profesional*/
+#MPP-TituloHM {
+    margin: 15px 375px 15px 375px;
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}

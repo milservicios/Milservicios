@@ -1,0 +1,189 @@
+﻿
+/* VISTA REGISTRO FAMILIA
+ * Cada "id" sera registrado de la forma
+ * MPF-AAAA. De forma que sera significativo
+ * para identificar cada etiqueta de esta vista
+*/
+body {
+    width: 100%;
+    height: 100%;
+}
+/*Cabecera de la vista*/
+
+#MPF-Header {
+    width: 100%;
+    height: 100%;
+}
+/*Titulo de la cabera*/
+#MPF-TituloH {
+    margin: 15px 450px 15px 450px;
+    padding: 10px 10px 10px 10px;
+    width: 350px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}
+/*Cuadrado central de la vista*/
+#MPF-CuadradoCentral {
+    margin: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 20px;
+    width: 1250px;
+    height: 550px;
+    background: linear-gradient(#e7eff2,#f7f7f7);
+    border: solid white 2px;
+}
+/*Formulario de la vista registro de familias*/
+#MPF-Formulario {
+    width: 450px;
+    height: 500px;
+    margin: 25px 325px 25px 325px;
+    padding: 15px 15px 15px 15px;
+    border: solid 2px white;
+    background-color: #e7eff2;
+}
+/*Etiquetas para el formulario*/
+/*Texto de Nombre*/
+#MPF-NombreT {
+    /*border: solid white 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Nombre*/
+#MPF-NombreC {
+    /*border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Apellidos*/
+#MPF-ApellidoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Apellidos*/
+#MPF-ApellidoC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Telefono*/
+#MPF-TelefonoT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Telefono*/
+#MPF-TelefonoC {
+    /*border: solid black 2px;*/
+    width: 150px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Email*/
+#MPF-EmailT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Email*/
+#MPF-EmailC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Password*/
+#MPF-PasswordT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Password*/
+#MPF-PasswordC {
+    /* border: solid black 2px;*/
+    width: 200px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Ciudad*/
+#MPF-CiudadT {
+    /*border: solid black 2px;*/
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Ciudad*/
+#MPF-CiudadC {
+    /*border: solid black 2px;*/
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Texto de Localizacion*/
+#MPF-LocalizacionT {
+    width: 85px;
+    height: 25px;
+    text-align: left;
+    float: left;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Cuadrado de Localizacion*/
+#MPF-LocalizacionC {
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/*Boton registro familia*/
+#MPF-Boton {
+    margin: 20px 20px 20px 125px;
+    width: 100px;
+    height: 25px;
+    font-family: Calibri;
+    font-weight: 900;
+}
+/*Modificar perfil de familia*/
+#MPF-TituloHM {
+    margin: 15px 400px 15px 400px;
+    padding: 10px 10px 10px 10px;
+    width: 450px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 900;
+}

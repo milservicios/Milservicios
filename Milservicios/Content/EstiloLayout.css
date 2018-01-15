@@ -183,22 +183,22 @@ body {
 }
 /*Cuando accedemos a la pagina web*/
 #Cuadrado3 {
-    margin: 12px 10px 13px 2px;   
+    margin: 0px 10px 0px 2px;   
     width: 85px;
     height: 25px;
     float: right;
     display: inline;   
 }
 #Cuadrado4 {
-    margin: 12px 10px 13px 2px;
+    margin: 0px 10px 0px 2px;
     width: 50px;
     height: 40px;
     float: right;
     display: inline;    
 }
 #IconoPagina1 {
-    margin: 0px 0px 0px 0px;
-    padding: 1px 1px 1px 1px;
+    margin: 5px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
     width: 40px;
     height: 40px;
     background: url(../imagenes/icono2.png) no-repeat center;
@@ -206,8 +206,8 @@ body {
     display: inline;
 }
 #IconoPagina2 {
-    margin: 0px 0px 0px 0px;
-    padding: 1px 1px 1px 1px;
+    margin: 5px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
     width: 40px;
     height: 40px;
     background: url(../imagenes/icono3.png) no-repeat center;
