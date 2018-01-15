@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnunciosLocales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AnunciosLocales>
+    <Id_Anuncio>4</Id_Anuncio>
+    <Duracion>3</Duracion>
+    <Horario>16.00-19.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>45</Sueldo>
+    <Ciudad>San Sebastian</Ciudad>
+    <Zona>Cualquiera</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Doy clases de economia a cualquier nivel.</Descripcion>
+    <TipoAnuncio>Clases Particilares</TipoAnuncio>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <NumeroAnimales>0</NumeroAnimales>
+    <Asignatura>Economia</Asignatura>
+    <Curso>Todos</Curso>
+    <IdProfesional>1</IdProfesional>
+    <IdFamilia>0</IdFamilia>
+  </AnunciosLocales>
+  <AnunciosLocales>
+    <Id_Anuncio>5</Id_Anuncio>
+    <Duracion>3</Duracion>
+    <Horario>16.00-19.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>12</Sueldo>
+    <Ciudad>San Sebastian</Ciudad>
+    <Zona>Cualquiera</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Cuido todo tipo de animales</Descripcion>
+    <TipoAnuncio>Cuidado de mascotas</TipoAnuncio>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <Animal>Perros y gatos</Animal>
+    <NumeroAnimales>6</NumeroAnimales>
+    <IdProfesional>0</IdProfesional>
+    <IdFamilia>1</IdFamilia>
+  </AnunciosLocales>
+  <AnunciosLocales>
+    <Id_Anuncio>6</Id_Anuncio>
+    <Duracion>4</Duracion>
+    <Horario>16.00-20.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>15</Sueldo>
+    <Ciudad>Sevilla</Ciudad>
+    <Zona>Cualquiera</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Doy clases de ingles a cualquier nivel. Tengo nivel C2 de ingles.</Descripcion>
+    <TipoAnuncio>Clases Particilares</TipoAnuncio>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <NumeroAnimales>0</NumeroAnimales>
+    <Asignatura>Ingles</Asignatura>
+    <Curso>Todos</Curso>
+    <IdProfesional>2</IdProfesional>
+    <IdFamilia>0</IdFamilia>
+  </AnunciosLocales>
+  <AnunciosLocales>
+    <Id_Anuncio>7</Id_Anuncio>
+    <Duracion>8</Duracion>
+    <Horario>12.00-20.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>15</Sueldo>
+    <Ciudad>Granada</Ciudad>
+    <Zona>Cualquiera</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Puedo trabajar de canguro y cuidando a personas mayores. Tengo mucha experiencia cuidando niños.</Descripcion>
+    <TipoAnuncio>Cuidado de personas</TipoAnuncio>
+    <EdadPersona>8</EdadPersona>
+    <NumeroPersonas>3</NumeroPersonas>
+    <TipoDeCuidado>Cualquier tipo de cuidado</TipoDeCuidado>
+    <NumeroAnimales>0</NumeroAnimales>
+    <IdProfesional>3</IdProfesional>
+    <IdFamilia>0</IdFamilia>
+  </AnunciosLocales>
+</ArrayOfAnunciosLocales>

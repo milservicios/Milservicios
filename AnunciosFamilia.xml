@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnunciosLocales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AnunciosLocales>
+    <Id_Anuncio>1</Id_Anuncio>
+    <Duracion>2</Duracion>
+    <Horario>16.00-18.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>12</Sueldo>
+    <Ciudad>San Sebastian</Ciudad>
+    <Zona>Calle Andina</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Estoy estudiando economia y necesito clases de macroeconomia internacional.</Descripcion>
+    <TipoAnuncio>Clases Particulares</TipoAnuncio>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <NumeroAnimales>0</NumeroAnimales>
+    <Asignatura>Macroeconomia</Asignatura>
+    <Curso>Tercero de carrera</Curso>
+    <IdProfesional>0</IdProfesional>
+    <IdFamilia>1</IdFamilia>
+  </AnunciosLocales>
+  <AnunciosLocales>
+    <Id_Anuncio>2</Id_Anuncio>
+    <Duracion>4</Duracion>
+    <Horario>14.00-18.00</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>12</Sueldo>
+    <Ciudad>Madrid</Ciudad>
+    <Zona>Puerta del Sol</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Busco una persona para realizar las labores de mi casa. Pago 12€ la hora.</Descripcion>
+    <TipoAnuncio>Labores Domesticas</TipoAnuncio>
+    <Tarea>Limpiar y planchar</Tarea>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <NumeroAnimales>0</NumeroAnimales>
+    <IdProfesional>0</IdProfesional>
+    <IdFamilia>2</IdFamilia>
+  </AnunciosLocales>
+  <AnunciosLocales>
+    <Id_Anuncio>3</Id_Anuncio>
+    <Duracion>48</Duracion>
+    <Horario>Dos dias</Horario>
+    <Carnet>SI</Carnet>
+    <Sueldo>12</Sueldo>
+    <Ciudad>Barcelona</Ciudad>
+    <Zona>Calle Diagonal</Zona>
+    <Fumador>NO</Fumador>
+    <Descripcion>Tengo 2 perros y necesito que alguien los cuide mientras me voy de viaje los dias 2 y 3 de febrero.</Descripcion>
+    <TipoAnuncio>Cuidado de mascotas</TipoAnuncio>
+    <EdadPersona>0</EdadPersona>
+    <NumeroPersonas>0</NumeroPersonas>
+    <Animal>Perro</Animal>
+    <NumeroAnimales>2</NumeroAnimales>
+    <IdProfesional>0</IdProfesional>
+    <IdFamilia>3</IdFamilia>
+  </AnunciosLocales>
+</ArrayOfAnunciosLocales>

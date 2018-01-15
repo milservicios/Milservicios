@@ -1,0 +1,125 @@
+﻿@{
+
+}
+<!DOCTYPE html>
+<html>
+<style>
+    table {
+        border: 1px solid black;
+        width: 40px;
+        height: 10px;
+        margin: 35px 55px 15px 55px;
+        padding: 45px 45px 15px 45px;
+    }
+
+    tr, th {
+        border: 1px solid black;
+        width: 40px;
+        height: 10px;
+        margin: 35px 55px 15px 55px;
+        padding: 45px 45px 15px 45px;
+        background-color: #87CEFA;
+    }
+
+    td {
+        border: 1px solid black;
+        margin: 55px 55px 15px 55px;
+        background-color: #c6d8e9;
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" href="~/Content/Anuncios/VistaAnuncios.css" />
+</head>
+
+<body>
+    <!-- CABECERA WEB -->
+    <header id="VA-TituloHeader">Mis anuncios Publicados</header>
+    <!-- CUERPO PRINCIPAL  -->
+    <p>
+        <a href="~/GestionAnuncios/TipoAnuncios"><b>Create New</b></a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Profesional o familia
+                </th>
+                <th>
+                    <a>Tipo anuncio</a>
+                </th>
+                <th>
+                    <a>Ciudad</a>
+                </th>
+                <th>
+                    <a>Duracion</a>
+                </th>
+                <th>
+                    <a>Reservar</a>
+                </th>
+                <th>
+                    <a>Detalles</a>
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>
+                    @ViewData["AnuncioTipo"]
+                </td>
+                <td>
+                    @ViewData["TipoAnuncio"]
+                </td>
+                <td>
+                    @ViewData["Ciudad"]
+                </td>
+                <td>
+                    @ViewData["Duracion"]
+                </td>
+                <td>
+                    <input type="checkbox" name="reserva" value="Reservado">
+                </td>
+                <td>
+
+                    <a href="~/AnunciosLocales/misAnunciosDetalles1">Details</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @ViewData["AnuncioTipo2"]
+                </td>
+                <td>
+                    @ViewData["TipoAnuncio2"]
+                </td>
+                <td>
+                    @ViewData["Ciudad2"]
+                </td>
+                <td>
+                    @ViewData["Duracion2"]
+                </td>
+                <td>
+                    <input type="checkbox" name="reserva" value="Reservado">
+                </td>
+                <td>
+
+                    <a href="~/AnunciosLocales/misAnuciosDetalles2">Details</a>
+
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <form action="/Perfil/PerfilProfesional">
+        <input type="submit" value="Volver">
+    </form>
+    <section id="VA-CuadroCentral"></section>
+    <br />
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+﻿<html>
+<style>
+    table {
+        border: 1px solid black;
+        width: 15px;
+        height: 10px;
+        margin: 15px 15px 15px 15px;
+        padding: 45px 45px 15px 45px;
+    }
+
+    tr, th {
+        border: 1px solid black;
+        width: 40px;
+        height: 10px;
+        margin: 15px 15px 15px 15px;
+        padding: 45px 45px 15px 45px;
+        background-color: #87CEFA;
+    }
+
+    td {
+        border: 1px solid black;
+        margin: 15px 15px 15px 15px;
+        background-color: #c6d8e9;
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" href="~/Content/Anuncios/VistaAnuncios.css" />
+</head>
+
+<body>
+    <!-- CABECERA WEB -->
+    <header id="VA-TituloHeader">Detalles del anuncio</header>
+    <!-- CUERPO PRINCIPAL  -->
+    <p>
+        <a href="~/GestionAnuncios/TipoAnuncios"><b>Create New</b></a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <br />Datos del anuncio
+                </th>
+
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>
+                    <br />Tipo de anuncio
+                </td>
+                <td>
+                    @ViewData["TipoAnuncio1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Duracion
+                </td>
+                <td>
+                    @ViewData["Duracion1"]
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <br />Curso
+                </td>
+                <td>
+                    @ViewData["Curso1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Asignatura
+                </td>
+                <td>
+                    @ViewData["Asignatura1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Ciudad
+                </td>
+                <td>
+                    @ViewData["Ciudad1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Zona
+                </td>
+                <td>
+                    @ViewData["Zona1"]
+                </td>
+            <tr>
+                <td>
+                    <br />Zona
+                </td>
+                <td>
+                    @ViewData["Descripcion1"]
+                </td>
+
+            </tr>
+
+            </tr>
+
+        </tbody>
+    </table>
+    <!-- Datos del usuario-->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <br />Datos del anuncio
+                </th>
+
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>
+                    <br />Nombre
+                </td>
+                <td>
+                    @ViewData["Nombre1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Apellidos
+                </td>
+                <td>
+                    @ViewData["Apellido1"]
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <br />Telefono
+                </td>
+                <td>
+                    @ViewData["Telefono1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Email
+                </td>
+                <td>
+                    @ViewData["Email1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Edad
+                </td>
+                <td>
+                    @ViewData["Edad1"]
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <br />Curriculum
+                </td>
+                <td>
+                    @ViewData["Curriculum1"]
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+    <form action="/AnunciosLocales/misReservas">
+        <input type="submit" value="Volver">
+    </form>
+    <section id="VA-CuadroCentral"></section>
+    <br />
+
+</body>
+
+</html>
