@@ -153,28 +153,28 @@ namespace Milservicios.Models.DatosLocales
         public void selializarDatosFamilia()
         {
             XmlSerializer s = new XmlSerializer(typeof(List<AnunciosLocales>));
-            TextWriter w = new StreamWriter(@"C:\Users\Jorge\Source\Repos\Milservicios\AnunciosFamilia.xml");
+            TextWriter w = new StreamWriter(@"C:\Users\Alberto\source\repos\Milservicios\AnunciosFamilia.xml");
             s.Serialize(w, anunciosFamilia);
             w.Close();
         }
         public void leerAnunciosFamilia()
         {
             XmlSerializer s = new XmlSerializer(typeof(List<AnunciosLocales>));
-            TextReader r = new StreamReader(@"C:\Users\Jorge\Source\Repos\Milservicios\AnunciosFamilia.xml");
+            TextReader r = new StreamReader(@"C:\Users\Alberto\source\repos\Milservicios\AnunciosFamilia.xml");
             anunciosFamilia = (List<AnunciosLocales>)s.Deserialize(r);
             r.Close();
         }
         public void selializarDatosProfesional()
         {
             XmlSerializer s = new XmlSerializer(typeof(List<AnunciosLocales>));
-            TextWriter w = new StreamWriter(@"C:\Users\Jorge\Source\Repos\Milservicios\AnunciosProfesionales.xml");
+            TextWriter w = new StreamWriter(@"C:\Users\Alberto\source\repos\Milservicios\AnunciosProfesionales.xml");
             s.Serialize(w, anunciosProfesional);
             w.Close();
         }
         public void leerAnunciosProfesional()
         {
             XmlSerializer s = new XmlSerializer(typeof(List<AnunciosLocales>));
-            TextReader r = new StreamReader(@"C:\Users\Jorge\Source\Repos\Milservicios\AnunciosProfesionales.xml");
+            TextReader r = new StreamReader(@"C:\Users\Alberto\source\repos\Milservicios\AnunciosProfesionales.xml");
             anunciosProfesional = (List<AnunciosLocales>)s.Deserialize(r);
             r.Close();
         }

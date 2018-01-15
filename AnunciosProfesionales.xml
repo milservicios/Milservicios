@@ -16,7 +16,7 @@
     <NumeroAnimales>0</NumeroAnimales>
     <Asignatura>Economia</Asignatura>
     <Curso>Todos</Curso>
-    <IdProfesional>1</IdProfesional>
+    <IdProfesional>2</IdProfesional>
     <IdFamilia>0</IdFamilia>
   </AnunciosLocales>
   <AnunciosLocales>
@@ -53,7 +53,7 @@
     <NumeroAnimales>0</NumeroAnimales>
     <Asignatura>Ingles</Asignatura>
     <Curso>Todos</Curso>
-    <IdProfesional>2</IdProfesional>
+    <IdProfesional>3</IdProfesional>
     <IdFamilia>0</IdFamilia>
   </AnunciosLocales>
   <AnunciosLocales>
@@ -71,7 +71,7 @@
     <NumeroPersonas>3</NumeroPersonas>
     <TipoDeCuidado>Cualquier tipo de cuidado</TipoDeCuidado>
     <NumeroAnimales>0</NumeroAnimales>
-    <IdProfesional>3</IdProfesional>
+    <IdProfesional>4</IdProfesional>
     <IdFamilia>0</IdFamilia>
   </AnunciosLocales>
 </ArrayOfAnunciosLocales>

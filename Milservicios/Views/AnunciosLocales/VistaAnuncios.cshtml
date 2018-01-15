@@ -3,31 +3,6 @@
 }
 <!DOCTYPE html>
 <html>
-<style>
-    table {
-        border: 1px solid black;
-        width: 40px;
-        height: 10px;
-        margin: 35px 55px 15px 55px;
-        padding: 45px 45px 15px 45px;
-    }
-
-    tr, th {
-        border: 1px solid black;
-        width: 40px;
-        height: 10px;
-        margin: 35px 55px 15px 55px;
-        padding: 45px 45px 15px 45px;
-        background-color: #87CEFA;
-    }
-
-    td {
-        border: 1px solid black;
-        margin: 55px 55px 15px 55px;
-        background-color: #c6d8e9;
-    }
-</style>
-
 <head>
     <link rel="stylesheet" href="~/Content/Anuncios/VistaAnuncios.css" />
 </head>
@@ -36,236 +11,260 @@
     <!-- CABECERA WEB -->
     <header id="VA-TituloHeader">Ofertas de Milservicios</header>
     <!-- CUERPO PRINCIPAL  -->
-    <p>
-        <a href="~/GestionAnuncios/TipoAnuncios"><b>Create New</b></a>
-    </p>
+    <section id="VA-CuadroCentral">
+        <!-- Cuadro Busquedas-->
+        <section id="VA-CuadroBusquedas">
+            <!-- Tipo anuncios-->
+            <section id="VA-TipoAnuncios">
+                <p>
+                    <a href="~/GestionAnuncios/TipoAnuncios" style="color:black;"><b>Crear Anuncio</b></a>
+                </p>
+            </section>
+            <!-- Busquedas ciudad-->
+            <section id="VA-BusqCiudad">
+                <form asp-action="anunciosBusquedaCiudad" method="get">
+                    <div class="form-actions no-color">
+                        <p>
+                            Buscar por ciudad: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
+                            <input type="submit" value="Buscar" class="btn btn-default" style="margin-left:5px;" />
 
-    <form asp-action="anunciosBusquedaCiudad" method="get">
-        <div class="form-actions no-color">
-            <p>
-                Buscar por ciudad: <input type="text" name="SearchString"  /> <!--value="ViewData["currentFilter"]"-->
-                <input type="submit" value="Buscar" class="btn btn-default" /> |
-                
-            </p>
-        </div>
-    </form>
-    <form asp-action="anunciosBusquedaCiudad" method="get">
-        <div class="form-actions no-color">
-            <p>
-                Buscar tipo de servicio: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
-                <input type="submit" value="Buscar" class="btn btn-default" /> |
-                
-            </p>
-        </div>
-    </form>
-    <form asp-action="anunciosBusquedaCiudad" method="get">
-        <div class="form-actions no-color">
-            <p>
-                Buscar por Nacionalidad: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
-                <input type="submit" value="Buscar" class="btn btn-default" /> |
-                
-            </p>
-        </div>
-    </form>
-    <form asp-action="anunciosBusquedaCiudad" method="get">
-        <div class="form-actions no-color">
-            <p>
-                Todos los criterios:
-                <input type="submit" value="Buscar" class="btn btn-default" /> |
-                <a asp-action="Index">Volver</a>
-            </p>
-        </div>
-    </form>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    Profesional o familia
-                </th>
-                <th>
-                    <a>Tipo anuncio</a>
-                </th>
-                <th>
-                    <a>Ciudad</a>
-                </th>
-                <th>
-                    <a>Duracion</a>
-                </th>
-                <th>
-                    <a>Reservar</a>
-                </th>
-                <th>
-                    <a>Detalles</a>
-                </th>
+                        </p>
+                    </div>
+                </form>
+            </section>
+            <!-- Busquedas Servicio -->
+            <section id="VA-BusqServicio">
+                <form asp-action="anunciosBusquedaCiudad" method="get">
+                    <div class="form-actions no-color">
+                        <p>
+                            Buscar tipo de servicio: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
+                            <input type="submit" value="Buscar" class="btn btn-default" style="margin-left:5px;" />
 
-                
-            </tr>
-        </thead>
-        <tbody>
+                        </p>
+                    </div>
+                </form>
+            </section>
+            <!-- Busquedas Nacionalidad-->
+            <section id="VA-BusqNacionalidad">
+                <form asp-action="anunciosBusquedaCiudad" method="get">
+                    <div class="form-actions no-color">
+                        <p>
+                            Buscar por Nacionalidad: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
+                            <input type="submit" value="Buscar" class="btn btn-default" style="margin-left:5px;" />
+
+                        </p>
+                    </div>
+                </form>
+            </section>
+            <!-- Busquedas Todo-->
+            <section id="VA-BusqTodo">
+                <form asp-action="anunciosBusquedaCiudad" method="get">
+                    <div class="form-actions no-color">
+                        <p>
+                            Todos los criterios:
+                            <input type="submit" value="Buscar" class="btn btn-default" style="margin-left:5px;" />
+
+                        </p>
+                    </div>
+                </form>
+            </section>
+            <!-- Volver
+    <section id="VA-Volver">
+        <a asp-action="/Home/Index">Volver</a>
+    </section> -->
+        </section>
+        <section id="VA-Tabla">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Profesional o familia
+                        </th>
+                        <th>
+                            <a>Tipo anuncio</a>
+                        </th>
+                        <th>
+                            <a>Ciudad</a>
+                        </th>
+                        <th>
+                            <a>Duracion</a>
+                        </th>
+                        <th>
+                            <a>Reservar</a>
+                        </th>
+                        <th>
+                            <a>Detalles</a>
+                        </th>
 
 
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo1"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio1"]
-                </td>
-                <td>
-                    @ViewData["Ciudad1"]
-                </td>
-                <td>
-                    @ViewData["Duracion1"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/AnunciosLocales/Detalles1">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio"]
-                </td>
-                <td>
-                    @ViewData["Ciudad"]
-                </td>
-                <td>
-                    @ViewData["Duracion"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo2"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio2"]
-                </td>
-                <td>
-                    @ViewData["Ciudad2"]
-                </td>
-                <td>
-                    @ViewData["Duracion2"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo3"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio3"]
-                </td>
-                <td>
-                    @ViewData["Ciudad3"]
-                </td>
-                <td>
-                    @ViewData["Duracion3"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo4"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio4"]
-                </td>
-                <td>
-                    @ViewData["Ciudad4"]
-                </td>
-                <td>
-                    @ViewData["Duracion4"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo5"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio5"]
-                </td>
-                <td>
-                    @ViewData["Ciudad5"]
-                </td>
-                <td>
-                    @ViewData["Duracion5"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @ViewData["AnuncioTipo6"]
-                </td>
-                <td>
-                    @ViewData["TipoAnuncio6"]
-                </td>
-                <td>
-                    @ViewData["Ciudad6"]
-                </td>
-                <td>
-                    @ViewData["Duracion6"]
-                </td>
-                <td>
-                    <input type="checkbox" name="reserva" value="Reservado">
-                </td>
-                <td>
-                    
-                    <a href="~/Home/Index">Details</a> 
-                    
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <form action="/AnunciosLocales/misReservas">
-        <input type="submit" value="Reservar">
-    </form>
-    <section id="VA-CuadroCentral"></section>
-    <br />
-   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo1"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio1"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad1"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion1"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/AnunciosLocales/Detalles1" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo2"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio2"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad2"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion2"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo3"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio3"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad3"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion3"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo4"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio4"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad4"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion4"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index"style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo5"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio5"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad5"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion5"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @ViewData["AnuncioTipo6"]
+                        </td>
+                        <td>
+                            @ViewData["TipoAnuncio6"]
+                        </td>
+                        <td>
+                            @ViewData["Ciudad6"]
+                        </td>
+                        <td>
+                            @ViewData["Duracion6"]
+                        </td>
+                        <td>
+                            <input type="checkbox" name="reserva" value="Reservado">
+                        </td>
+                        <td>
+
+                            <a href="~/Home/Index" style="color:black;">Details</a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="VA-ReservarBoton">
+            <form action="/AnunciosLocales/misReservas">
+                <input type="submit" value="Reservar">
+            </form>
+        </section>
+    </section>
+
+
 </body>
 
 </html>

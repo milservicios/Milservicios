@@ -28,5 +28,91 @@ body {
     width: 1250px;
     height: 550px;
     background: linear-gradient(#e7eff2,#f7f7f7);
-    border: solid white 2px;
+    /*border: solid white 2px;*/
+}
+/*Cuadro busquedas*/
+#VA-CuadroBusquedas{
+    margin:10px 300px 10px 320px;
+    width:500px;
+    height:200px;
+    border:solid white 1px;
+}
+/*Tipos*/
+#VA-TipoAnuncios{
+    margin:5px 180px 5px 180px;
+    width:150px;
+    height:25px;
+    /*border:solid black 1px;*/
+}
+/*Busquedas ciudad*/
+#VA-BusqCiudad{
+    margin:0px 50px 5px 50px;
+    width:400px;
+    height:30px;
+    /*border:solid 1px black;*/
+}
+/*Busqueda Servicios*/
+#VA-BusqServicio {
+    margin: 0px 50px 5px 50px;
+    width: 400px;
+    height: 30px;
+    /*border: solid 1px black;*/
+}
+/*Busqueda Servicios*/
+#VA-BusqNacionalidad {
+    margin: 0px 50px 5px 50px;
+    width: 400px;
+    height: 30px;
+    /*border: solid 1px black;*/
+}
+/*Busqueda Todo*/
+#VA-BusqTodo {
+    margin: 0px 50px 5px 50px;
+    width: 400px;
+    height: 30px;
+    /*border: solid 1px black;*/
+}
+/*Volver atras*/
+#VA-Volver {
+    margin: 0px 250px 5px 200px;
+    width: 60px;
+    height: 20px;
+    /*border: solid 1px black;*/
+}
+/*VA-Tabla*/
+#VA-Tabla {
+    margin: 10px 100px 10px 100px;
+    width: 1000px;
+    height: 300px;
+    /*border: solid black 1px;*/
+}
+/*Botoon reservar*/
+#VA-ReservarBoton {
+    margin: 0px 500px 10px 500px;
+    width: 70px;
+    height: 20px;
+    /*border: solid black 1px;*/
+}
+/*TAbla*/
+table {
+    border: 1px solid black;
+    width: 40px;
+    height: 10px;
+    margin: 15px 55px 15px 55px;
+    padding: 45px 45px 15px 45px;
+}
+
+tr, th {
+    border: 1px solid black;
+    width: 40px;
+    height: 10px;
+    margin: 35px 55px 15px 55px;
+    padding: 45px 45px 15px 45px;
+    background-color: #87CEFA;
+}
+
+td {
+    border: 1px solid black;
+    margin: 55px 55px 15px 55px;
+    background-color: #c6d8e9;
 }
