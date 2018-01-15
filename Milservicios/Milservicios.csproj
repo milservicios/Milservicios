@@ -218,17 +218,24 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AnunciosLocalesController.cs" />
     <Compile Include="Controllers\ControlWebController.cs" />
     <Compile Include="Controllers\GestionAnunciosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Controllers\UsuariosLocalesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BaseDatos\BaseDatos.cs" />
     <Compile Include="Models\BaseDatos\ConexionDB.cs" />
+    <Compile Include="Models\DatosLocales\AnunciosLocales.cs" />
+    <Compile Include="Models\DatosLocales\ArrayAnuncios.cs" />
+    <Compile Include="Models\DatosLocales\ArrayUsuarios.cs" />
+    <Compile Include="Models\DatosLocales\FamiliaUsuarios.cs" />
+    <Compile Include="Models\DatosLocales\ProfesionalUsuarios.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\TablasSQL\ANUNCIO.cs">
@@ -414,11 +421,17 @@
     <Content Include="Views\Perfil\ModificarPerfilFamilia.cshtml" />
     <Content Include="Views\Perfil\ModificarPerfilProfesional.cshtml" />
     <Content Include="Views\Perfil\ModificarPerfilAmbos.cshtml" />
-    <Content Include="Views\GestionAnuncios\VistaAnuncios.cshtml" />
+    <Content Include="Views\AnunciosLocales\VistaAnuncios.cshtml" />
+    <Content Include="Views\AnunciosLocales\Detalles1.cshtml" />
+    <Content Include="Views\AnunciosLocales\misAnuncios.cshtml" />
+    <Content Include="Views\AnunciosLocales\misAnunciosDetalles1.cshtml" />
+    <Content Include="Views\AnunciosLocales\misReservas.cshtml" />
+    <Content Include="Views\AnunciosLocales\misReservasDetalles1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Busquedas\" />
+    <Folder Include="Views\UsuariosLocales\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
