@@ -39,6 +39,43 @@
     <p>
         <a href="~/GestionAnuncios/TipoAnuncios"><b>Create New</b></a>
     </p>
+
+    <form asp-action="anunciosBusquedaCiudad" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Buscar por ciudad: <input type="text" name="SearchString"  /> <!--value="ViewData["currentFilter"]"-->
+                <input type="submit" value="Buscar" class="btn btn-default" /> |
+                
+            </p>
+        </div>
+    </form>
+    <form asp-action="anunciosBusquedaCiudad" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Buscar tipo de servicio: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
+                <input type="submit" value="Buscar" class="btn btn-default" /> |
+                
+            </p>
+        </div>
+    </form>
+    <form asp-action="anunciosBusquedaCiudad" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Buscar por Nacionalidad: <input type="text" name="SearchString" /> <!--value="ViewData["currentFilter"]"-->
+                <input type="submit" value="Buscar" class="btn btn-default" /> |
+                
+            </p>
+        </div>
+    </form>
+    <form asp-action="anunciosBusquedaCiudad" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Todos los criterios:
+                <input type="submit" value="Buscar" class="btn btn-default" /> |
+                <a asp-action="Index">Volver</a>
+            </p>
+        </div>
+    </form>
     <table class="table">
         <thead>
             <tr>
